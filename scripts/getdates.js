@@ -8,3 +8,4 @@ let todaysYear = new Date().getFullYear();
 document.querySelector('footer span').textContent = todaysYear;
 
 document.querySelector('#lastModified').textContent = "Last Modified: " + document.lastModified
+
