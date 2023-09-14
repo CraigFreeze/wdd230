@@ -53,13 +53,48 @@ a:visited {
 
 main {
     margin: 1.5rem;
+    margin-bottom: -.4rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: ;
 }
 
-section {
-    border-style: 1px;
-    border-color: black;
-    
+main h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card {
+    border-style: solid;
+    border-color: rgb(221, 110, 66);
+    border-radius: 5px;
+    border-width: .125rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    background: rgb(221, 110, 66);
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.card ul {
+    list-style-type: none;
+    margin: 1rem;
+    line-height: 150%;
+}
+
+.card p {
+    margin: 1rem;
+    text-align: center;
+}
+
+footer {
+    color: rgb(234, 234, 234);
+    background: rgb(79, 109, 122);
+    padding: 3rem;
+    text-align: center;
+    vertical-align: middle;
 }
