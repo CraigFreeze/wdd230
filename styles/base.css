@@ -1,0 +1,65 @@
+/*
+    COLOR PALLETE FOR WEBSITE
+    rgb(221, 110, 66); - BURNT SIENNA (ORANGE)
+    rgb(232, 218, 178); - DUTCH WHITE (CREAM)
+    rgb(79, 109, 122); - PAYNE'S GRAY (BLUE)
+    rgb(192, 214, 223); - COLUMBIA BLUE (LIGHT BLUE)
+    rgb(234, 234, 234); - PLATINUM (GRAY)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+header {
+    background: rgb(79, 109, 122);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+img {
+    grid-column: 1 / 5;
+    justify-self: end;
+    width: 7rem;
+    height: auto;
+}
+
+h1 {
+    grid-column: 5 / 10;
+    justify-self: start;
+    color: rgb(234, 234, 234);
+}
+
+nav {
+    display: grid;
+    grid-template: 1fr / auto;
+    font-size: 1.3rem;
+}
+
+nav a:link,
+a:visited {
+    padding: 1rem;
+    background: rgb(232, 218, 178);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+}
+
+section {
+    border-style: 1px;
+    border-color: black;
+    
+}
