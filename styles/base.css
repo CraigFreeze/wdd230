@@ -133,8 +133,12 @@ main h2 {
     text-align: center;
 }
 
-main hr {
-    margin-bottom: 1rem;
+.section, section{
+    grid-column: span 3;
+}
+
+iframe {
+    width: 100%;
 }
 
 .card {

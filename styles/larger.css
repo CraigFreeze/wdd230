@@ -6,21 +6,23 @@
     }
 
     .navigation {
-		display: flex;
+        display: flex;
         flex-direction: row;
-	}
+    }
 
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation a {
-		text-align: center;
-	}
-    
-	#menu {
-		display: none;
-	}
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
 
     main {
         margin: 1rem 10rem auto 10rem;
