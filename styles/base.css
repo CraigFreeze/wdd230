@@ -16,7 +16,7 @@
 header {
     background: rgb(79, 109, 122);
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(9, minmax(0, 1fr));
     grid-template-rows: auto;
     grid-gap: 1rem;
     justify-items: center;
@@ -37,18 +37,76 @@ h1 {
     color: rgb(234, 234, 234);
 }
 
+#menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: rgb(79, 109, 122);
+    color: rgb(234, 234, 234);
+    font-size: 2rem;
+    margin: .25rem .25rem auto auto;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+#menu:hover {
+    background: rgb(221, 110, 66);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
 nav {
     background: rgb(232, 218, 178);
 }
 
 nav ul li {
     display: grid;
-    grid-template: 1fr / auto;
+    grid-template: minmax(0, 1fr) / auto;
     font-size: 1.3rem;
 }
 
 nav a:link,
-a:visited {
+a:visited,
+nav a {
     padding: 1rem;
     background: rgb(232, 218, 178);
     color: black;
@@ -60,23 +118,27 @@ nav a:hover {
     background: rgb(255, 255, 255);
 }
 
-nav a:active {
-    background: rgb(232, 218, 178);
+.navigation li a:active {
+    background: rgb(221, 110, 66);
 }
 
 main {
     margin: 1.5rem;
-    margin-bottom: -.4rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 1rem;
 }
 
 main h2 {
     text-align: center;
 }
 
-main hr {
-    margin-bottom: 1rem;
+section {
+    grid-column: span 3;
+}
+
+iframe {
+    width: 100%;
 }
 
 .card {
@@ -84,7 +146,6 @@ main hr {
     border-color: rgb(221, 110, 66);
     border-radius: 5px;
     border-width: .125rem;
-    margin-bottom: 1rem;
     font-size: 1.15rem;
 }
 
@@ -107,10 +168,16 @@ main hr {
     text-align: center;
 }
 
+::selection {
+    background: rgb(223, 198, 189);
+    color: black;
+}
+
 footer {
     color: rgb(234, 234, 234);
     background: rgb(79, 109, 122);
     padding: 2rem;
     text-align: center;
     vertical-align: middle;
+    margin-top: 1.5rem;
 }
