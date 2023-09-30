@@ -10,7 +10,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: 'Roboto';
+}
+
+body {
+    background: rgb(252, 254, 255);
 }
 
 header {
@@ -76,10 +80,6 @@ h1 {
 
 .navigation a {
     display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    color: black;
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -110,7 +110,6 @@ nav a {
     padding: 1rem;
     background: rgb(232, 218, 178);
     color: black;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -133,7 +132,8 @@ main h2 {
     text-align: center;
 }
 
-.section, section{
+.section,
+section {
     grid-column: span 3;
 }
 

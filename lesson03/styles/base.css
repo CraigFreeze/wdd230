@@ -1,0 +1,162 @@
+/* 
+    CSS HEX
+    --mustard: #fed766ff;
+    --charcoal: #2f4550ff;
+    --carolina-blue: #84bcdaff;
+    --cinereous: #92817aff;
+    --salmon: #e2856eff; 
+    background-color: rgb(255, 252, 249);
+
+    https://coolors.co/fed766-2f4550-84bcda-92817a-e2856e
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    /* background-color: rgb(255, 252, 249); */
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.work-sans{
+    font-family: 'Work Sans';
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    background-color: rgb(255, 252, 249);
+    font-family: 'Montserrat';
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h2+p {
+    margin-left: 1rem;
+}
+
+h2+ol, p+ul {
+    margin-left: 2rem;
+}
+
+header, nav {
+    font-family: 'Work Sans';
+}
+
+header {
+    background: #2f4550ff;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+}
+
+nav {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: black;
+}
+
+nav a:hover{
+    background:#e2856eff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space;
+    background: #fed766ff;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+#background-color {
+    background-color: rgb(255, 252, 249);
+    padding: 1rem;
+    border: 1px solid #2f4550ff;
+    font-size: 1.1rem;
+    width: 32rem;
+    height: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#palette {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-row: repeat(3, minmax(0, 1fr));
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem;
+}
+
+#palette>div {
+    padding: 1rem;
+}
+
+.yellow {
+    background: #fed766ff;
+    grid-column: span 2;
+}
+
+.dark-blue {
+    background: #2f4550ff;
+    color: white;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.light-blue {
+    background: #84bcdaff;
+    grid-row: span 2;
+}
+
+.light-brown {
+    background: #92817aff;
+}
+
+.salmon {
+    background: #e2856eff;
+    grid-column: span 2;
+}
+
+.background-color {
+    background-color: rgb(255, 252, 249);
+}
+
+footer{
+    background: #2f4550ff;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
