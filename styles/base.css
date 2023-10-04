@@ -51,7 +51,6 @@ h1 {
     margin: .25rem .25rem auto auto;
     border: 1px solid white;
     border-radius: 10px;
-
 }
 
 #menu:hover {
@@ -69,7 +68,7 @@ h1 {
 .navigation {
     list-style: none;
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 47.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -83,6 +82,7 @@ h1 {
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-align: center;
 }
 
 .navigation a:hover {
@@ -135,6 +135,10 @@ main h2 {
 .section,
 section {
     grid-column: span 3;
+}
+
+section ul a {
+    color: black;
 }
 
 iframe {
