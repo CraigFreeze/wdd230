@@ -1,7 +1,43 @@
-@media screen and (min-width: 1020px){
-    .header{
+@media screen and (min-width: 1020px) {
+    .header {
         background: green;
     }
+
+    .small-view {
+        display: none;
+    }
+
+    .large-view {
+        display: inline;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav ul li {
+        height: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
 
     /* nav {
         max-height: 5rem;
@@ -18,10 +54,7 @@
         list-style: none;
     }
     
-    nav ul li {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+    
     
     nav ul li a,
     nav ul li a:hover,
@@ -39,7 +72,7 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    section{
+    section {
         grid-column: span 1;
     }
 }

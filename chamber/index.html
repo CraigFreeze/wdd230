@@ -23,30 +23,39 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <span><strong>Not a member yet?</strong> <a class="header-contact-us" href="#contact-box">Join the
-                    Chamber</a></span>
-        </div>
+    <div id="upper">
+        <header>
+            <div class="header">
+                <span><strong>Not a member yet?</strong> <a class="header-contact-us" href="#contact-box">Join the
+                        Chamber</a></span>
+            </div>
+        </header>
         <nav>
-            <a href="index.html"><img id="logo" src="images/website-logo.png" alt="R & J Insurance Logo"></a>
-            <ul>
+            <div id="inline-header-elements">
+                <a href="index.html"><img id="logo" src="images/website-logo.png"
+                        alt="Reno Chamber of Commerce Logo"></a>
+                <a id="menu" href="#"></a>
+                <div class="button small-view"><a href="#" class="join">Join Today</a></div>
+            </div>
+            <ul class="navigation">
                 <li><a href="#contact-box">Home</a></li>
                 <li><a href="#about-us-box">Discover</a></li>
                 <li><a href="#individual-box">Directory</a></li>
             </ul>
-            <div class="button"><a href="#" class="join">Join Today</a></div>
+            <div class="button"><a href="#" class="join large-view">Join Today</a></div>
         </nav>
-    </header>
+    </div>
     <main>
         <div id="intro">
-            <img src="https://incadventures.com/wp-content/uploads/2020/09/Reno-in-Snow.jpg"
-                alt="Jon Hiatt and Ruthanne Hiatt" id="intro-img">
-            <div id="intro-content">
-                <span id="intro-text">Local and Community Based</span>
-                <span id="intro-sub-text">Business, financial, and leadership growth opportunity. <br> Advocates for
-                    financial freedom.</span>
-                <div class="button"><a href="#" class="join">Join Today</a></div>
+            <img src="https://incadventures.com/wp-content/uploads/2020/09/Reno-in-Snow.jpg" alt="Reno Nevada City"
+                id="intro-img">
+            <div id="intro-container">
+                <div id="intro-content">
+                    <span id="intro-text">Local and Community Based</span>
+                    <span id="intro-sub-text">Business, financial, and leadership growth opportunity. <br> Advocates for
+                        financial freedom.</span>
+                    <div class="button"><a href="#" class="join">Join Today</a></div>
+                </div>
             </div>
         </div>
         <section id="contact-box">
@@ -150,6 +159,8 @@
             <p id="lastModified">last modified</p>
         </span>
     </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
