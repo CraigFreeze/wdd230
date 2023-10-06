@@ -149,7 +149,7 @@ main {
     grid-template-columns: minmax(0, 1fr);
 }
 
-#intro {
+/* #intro {
     grid-column-start: 1;
     grid-column-end: -1;
     position: relative;
@@ -165,16 +165,15 @@ main {
     border-bottom: 2rem solid var(--cinereous);
 }
 
-#intro-container{
+#intro-container {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 40%;
     top: 60%;
     border: solid;
 }
 
 #intro-content {
-    /* border: 3px solid #041157; */
     display: grid;
     color: white;
     text-align: center;
@@ -182,7 +181,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     line-height: 1;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 
 #intro-text,
@@ -191,11 +190,14 @@ main {
 }
 
 #intro-text {
+
     font-size: 4rem;
 }
 
 #intro-sub-text {
+
     font-size: 2rem;
+
 }
 
 #intro-content .button {
@@ -208,7 +210,7 @@ main {
     padding: 1.1rem 4rem;
     font-size: 1.4rem;
     border-radius: 10px;
-}
+} */
 
 /* Section */
 section {
