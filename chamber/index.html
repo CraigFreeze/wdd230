@@ -35,29 +35,31 @@
                 <a href="index.html"><img id="logo" src="images/website-logo.png"
                         alt="Reno Chamber of Commerce Logo"></a>
                 <a id="menu" href="#"></a>
-                <div class="button small-view"><a href="#" class="join">Join Today</a></div>
             </div>
             <ul class="navigation">
                 <li><a href="#contact-box">Home</a></li>
                 <li><a href="#about-us-box">Discover</a></li>
-                <li><a href="#individual-box">Directory</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="small-view"><a href="">Join</a></li>
             </ul>
-            <div class="button"><a href="#" class="join large-view">Join Today</a></div>
+            <div class="button"><a href="#" class="join large-view">Join</a></div>
         </nav>
     </div>
     <main>
-        <div id="intro">
-            <img src="https://incadventures.com/wp-content/uploads/2020/09/Reno-in-Snow.jpg" alt="Reno Nevada City"
-                id="intro-img">
-            <div id="intro-container">
-                <div id="intro-content">
-                    <span id="intro-text">Local and Community Based</span>
-                    <span id="intro-sub-text">Business, financial, and leadership growth opportunity. <br> Advocates for
-                        financial freedom.</span>
-                    <div class="button"><a href="#" class="join">Join Today</a></div>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero container">
+                <div class="hero text">
+                    <h1>Local and Community Based</h1>
+                    <h2>Business, financial, and leadership growth opportunity. <br> Advocates for
+                        financial freedom.</h2>
+                    <a href="#" class="cta">Join</a>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End Hero Sectoin -->
+
+        <!-- Contact Us Section -->
         <section id="contact-box">
             <h2 id="contact-header">Contact Us</h2>
             <div id="address" class="contact-el">
@@ -98,7 +100,9 @@
                 </div>
             </div>
         </section>
-        <!-- <hr> -->
+        <!-- End Contact Us Section -->
+
+        <!-- Getting Started Section -->
         <section id="getting-started">
             <h2>Getting Started</h2>
             <p>
@@ -109,7 +113,9 @@
             </ol>
             </p>
         </section>
-        <!-- <hr> -->
+        <!-- End Getting Started Section -->
+
+
         <section id="about-us-box">
             <h2>About Us</h2>
             <p>Serving Northern Nevada since 1999. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nulla!
@@ -126,7 +132,7 @@
                 id?
             </p>
         </section>
-        <!-- <hr> -->
+
         <section id="current-events-box">
             <h2>Current Events</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In debitis quasi explicabo vel itaque,
@@ -134,7 +140,6 @@
                 quisquam aperiam, nihil eos incidunt officia nisi deleniti praesentium illum. Sequi rem hic aperiam
                 officiis maxime ex, reprehenderit facere aliquam amet velit optio qui?</p>
         </section>
-        <!-- <hr> -->
         <section id="weather-box">
             <h2>Weather</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In debitis quasi explicabo vel itaque,
@@ -155,7 +160,7 @@
     </main>
     <footer>
         <span>
-            <p>© <span>year</span> - Craig Freeze - Created for School Project: WDD 230 - BYUI</p>
+            <p>© <span id="year">year</span> - Craig Freeze - Created for School Project: WDD 230 - BYUI</p>
             <p id="lastModified">last modified</p>
         </span>
     </footer>

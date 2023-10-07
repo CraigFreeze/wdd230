@@ -1,72 +1,11 @@
 @media screen and (min-width: 1020px) {
-    .header {
+    /* .header {
         background: green;
-    }
-
-    .small-view {
-        display: none;
-    }
-
-    .large-view {
-        display: inline;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    nav ul li {
-        height: auto;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    nav ul li {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-
-    /* nav {
-        max-height: 5rem;
-        margin: 1.1rem;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        list-style: none;
-    }
-    
-    
-    
-    nav ul li a,
-    nav ul li a:hover,
-    nav ul li a:visited {
-        text-decoration: none;
-        color: black;
-    }
-    
-    nav ul li a:hover {
-        border-bottom: 3px solid var(--charcoal);
-        border-radius: 3px;
     } */
+
+    #hero, #contact-box {
+        grid-column: span 3;
+    }
 
     main {
         grid-template-columns: repeat(3, minmax(0, 1fr));
