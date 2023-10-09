@@ -1,10 +1,11 @@
+//Minumum required global variables
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
-const error = document.querySelector('#error')
+//End Minimum required global variables
 
-let counter = 0; //"A" Level Application and Service
-// Shows error message on screen if tries adding more than 10 items
+const error = document.querySelector('#error')
+let counter = 0; //"A" Level Application and Service Shows error message on screen if tries adding more than 10 items
 
 // Event Listners
 button.addEventListener('click', () => {
@@ -14,6 +15,8 @@ button.addEventListener('click', () => {
             error.classList.toggle('hide');
         }
         counter += 1;
+
+        //Start minimum requirements for project
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
         li.innerHTML = input.value;
@@ -21,11 +24,13 @@ button.addEventListener('click', () => {
         li.append(deleteButton);
         list.append(li);
         deleteButton.addEventListener('click', function () {
+            counter -= 1; //decrease counter, so that they can add more scriptures
             list.removeChild(li);
             input.focus();
         });
         input.focus();
         input.value = '';
+        //End minimum requirements for project
     } else if (counter >= 10) {
         error.innerHTML = "Amount of Chapters is already 10";
         if (error.classList.contains('hide')) {
