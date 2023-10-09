@@ -37,16 +37,18 @@
         margin-top: auto;
         margin-bottom: auto;
     }
-    
+
     main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    #hero, #contact-box,#location-box{
+    #hero,
+    #contact-box,
+    #location-box {
         grid-column: span 2;
     }
 
-    section{
+    section {
         grid-column: span 1;
         border: 1px solid var(--charcoal);
     }
@@ -57,7 +59,22 @@
         color: white;
         text-align: center;
     }
+
     #hero h2 {
         font-size: 2rem;
+    }
+    
+    #footer-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer #contact-footer {
+        grid-column: span 1;
+        margin: 2rem;
+    }
+
+    footer #page-info {
+        grid-column: span 1;
+        font-size: .85rem;
     }
 }

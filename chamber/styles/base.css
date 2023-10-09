@@ -201,6 +201,7 @@ main {
     color: black;
     background-color: var(--mustard);
 }
+
 /* End Hero Section */
 
 /* Section */
@@ -266,20 +267,35 @@ iframe {
 /* Footer */
 
 footer {
-    height: 6rem;
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    background: var(--carolina-blue);
+    color: white;
+    padding-bottom: 2rem;
+}
+
+#footer-wrapper{
+    display: grid;
+    align-items: center;
+    height: auto;
     background: var(--carolina-blue);
     color: white;
     display: grid;
-    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+footer #contact-footer {
+    grid-column: span 1;
+    margin: 1rem;
+    align-items: center;
 }
 
-footer div {
+footer #page-info {
     font-size: .85rem;
+    grid-column: span 1;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* font-weight: 700; */
+
 }
 
 footer a,

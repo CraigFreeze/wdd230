@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--charcoal);
+        color: white;
+    }
+
+    h2 {
+        color: var(--salmon);
+    }
+}
