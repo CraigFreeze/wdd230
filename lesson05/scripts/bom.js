@@ -15,10 +15,11 @@ button.addEventListener('click', () => {
             list.removeChild(li);
             input.focus();
         });
-        // input.focus();
+        input.focus();
         input.value = '';
     } else {
         console.log("Enter a book and chapter")
+        input.focus(); //I added a focus to encourage the user to type something
     }
 });
 
