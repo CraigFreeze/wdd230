@@ -58,6 +58,12 @@ li {
 	justify-content: space-between;
 }
 
+#error {
+    color: red;
+}
+.hide {
+    display: none;
+}
 @media only screen and (min-width: 32.5em) {
 	h1 {
 		font-size: 2rem;
