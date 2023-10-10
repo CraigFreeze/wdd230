@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <img src="images/craig-freeze-profile.jpg" alt="Craig Freeze's Profile Picture">
+        <img id="profile" src="images/craig-freeze-profile.jpg" alt="Craig Freeze's Profile Picture">
         <h1>Craig T. Freeze</h1>
     </header>
     <nav>
@@ -42,6 +42,18 @@
     </nav>
 
     <main>
+        <div id="hero">
+            <picture>
+                <!-- width="400" height="600" -->
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <!-- width="1000" height="818" -->
+                <img src="images/hero-large.webp" alt="Provo City Center Temple" id="hero-img">
+            </picture>
+            <div id="hero-text">
+                Provo City Center Temple
+            </div>
+        </div>
+
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <section class="card card1">
@@ -56,8 +68,12 @@
                     <a href="https://codepen.io/CraigFreeze/pen/jOXKLmb">Code Pen - Hamburger</a> | <a
                         href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
                 </li>
-                <li>04: <a href="https://codepen.io/CraigFreeze/pen/vYvQKXq?editors=1100">Code Pen - Psuedo Classes</a></li>
-                <li>05: <a href="lesson05/bom.html">Book of Mormon - Top 10</a> | <a href="lesson05/images/landscape.webp">webp</a> | <a href="lesson03/responsive-images.html">webp</a></li>
+                <li>04: <a href="https://codepen.io/CraigFreeze/pen/vYvQKXq?editors=1100">Code Pen - Psuedo
+                        Classes</a>
+                </li>
+                <li>05: <a href="lesson05/bom.html">Book of Mormon - Top 10</a> | <a
+                        href="lesson05/images/landscape.webp">webp</a> | <a
+                        href="lesson03/responsive-images.html">webp</a></li>
                 <li>06: </li>
                 <li>07: </li>
                 <li>08: </li>

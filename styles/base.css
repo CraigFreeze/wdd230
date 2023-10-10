@@ -28,11 +28,32 @@ header {
     padding: 1rem;
 }
 
-img {
+#profile {
     grid-column: 1 / 5;
     justify-self: end;
     aspect-ratio: 4 / 5;
     width: 7rem;
+}
+
+#hero {
+    grid-column: span 3;
+    position: relative;
+}
+
+#hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#hero-text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: black;
+    background: rgb(232, 218, 178);
+    font-size: 1rem;
+    padding: 1rem;
+    white-space: nowrap;
 }
 
 h1 {
