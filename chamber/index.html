@@ -47,18 +47,20 @@
         </nav>
     </div>
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero container">
-                <div class="hero text">
-                    <h1>Reno Chamber of Commerce</h1>
-                    <h2>Business, financial, and leadership growth opportunity. <br> Advocates for
-                        financial freedom.</h2>
-                    <a href="#" class="cta">Join</a>
-                </div>
+        <div id="hero-container">
+            <picture class="hero-picture">
+                <!-- <source media="(min-width: 1020px)" srcset="images/reno-largest.webp"> -->
+                <source media="(max-width: 768px)" srcset="images/reno-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/reno-medium.webp">
+                <img src="images/reno-large.webp" alt="Reno in snow">
+            </picture>
+            <div id="hero-text">
+                <h1 id="hero-sub-text1">Reno Chamber of Commerce</h1>
+                <h2 id="hero-sub-text2">Business, financial, and leadership growth opportunity. <br> Advocates for
+                    financial freedom.</h2>
+                <a href="#" class="cta">Join</a>
             </div>
-        </section>
-        <!-- End Hero Sectoin -->
+        </div>
 
         <!-- Contact Us Section -->
         <section id="contact-box">

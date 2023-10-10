@@ -38,8 +38,10 @@
         margin-bottom: auto;
     }
 
+
     main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 768px;
     }
 
     #hero,
@@ -53,18 +55,37 @@
         border: 1px solid var(--charcoal);
     }
 
-    #hero h1 {
-        font-size: 4rem;
-        position: relative;
+    #hero-text{
+        position: absolute;
         color: white;
+        width: 100%;
+        padding: 3rem;
+        top: 35%;
+        line-height: 1;
         text-align: center;
     }
-
-    #hero h2 {
+    
+    #hero-sub-text1 {
+        display: block;
         font-size: 2rem;
+        color: white;
     }
     
-    #footer-wrapper{
+    #hero-sub-text2 {
+        display: block;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    #hero-text .cta {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 30px;
+        color: black;
+        background-color: var(--mustard);
+    }
+
+    #footer-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 

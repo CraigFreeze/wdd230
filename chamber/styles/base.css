@@ -143,22 +143,21 @@ nav ul li a:hover {
 main {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Hero Section */
-#hero {
-    background-image: url(https://incadventures.com/wp-content/uploads/2020/09/Reno-in-Snow.jpg);
-    background-size: cover;
-    background-position: top center;
+#hero-container {
+    width: 100%;
+    height: auto;
+    line-height: 0;
     position: relative;
-    z-index: 1;
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
-#hero::after {
+#hero-container::after {
     content: '';
     position: absolute;
     left: 0;
@@ -166,35 +165,33 @@ main {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .4;
-    z-index: -1;
+    opacity: .5;
+    z-index: 1;
 }
 
-#hero .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-
-#hero h1 {
-    display: block;
-    width: fit-content;
-    font-size: 2rem;
-    position: relative;
+#hero-text {
+    position: absolute;
     color: white;
+    width: 100%;
+    top: 0;
+    line-height: 1;
     text-align: center;
+    z-index: 2;
 }
 
-#hero h2 {
+#hero-sub-text1 {
     display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: white;
-    text-align: center;
 }
 
-#hero .cta {
+#hero-sub-text2 {
+    display: block;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#hero-text .cta {
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
@@ -275,7 +272,7 @@ footer {
     padding-bottom: 2rem;
 }
 
-#footer-wrapper{
+#footer-wrapper {
     display: grid;
     align-items: center;
     height: auto;
@@ -285,6 +282,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
+
 footer #contact-footer {
     grid-column: span 1;
     margin: 1rem;
