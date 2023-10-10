@@ -147,6 +147,7 @@ main {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-gap: 1rem;
+    max-width: 1000px;
 }
 
 main h2 {
