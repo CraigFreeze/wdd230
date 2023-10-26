@@ -21,6 +21,16 @@
     background: white;
 }
 
+/* content: '☀️'; */
+#dark-mode {
+    color: black;
+    position: absolute;
+    font-size: 4rem;
+    right: 1rem;
+    top: 1rem;
+    line-height: 0;
+}
+
 .header {
     height: 2.2rem;
     width: 100%;
