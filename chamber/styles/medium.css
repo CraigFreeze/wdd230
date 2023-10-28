@@ -41,7 +41,15 @@
 
     main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        max-width: 768px;
+        max-width: 800px;
+    }
+
+    .with-side-bar {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+
+    figure img:hover {
+        box-shadow: 0 0 50px #333;
     }
 
     #hero,
@@ -52,10 +60,10 @@
 
     section {
         grid-column: span 1;
-        border: 1px solid var(--charcoal);
+        /* border: 1px solid var(--charcoal); */
     }
 
-    #hero-text{
+    #hero-text {
         position: absolute;
         color: white;
         width: 100%;
@@ -64,19 +72,19 @@
         line-height: 1;
         text-align: center;
     }
-    
+
     #hero-sub-text1 {
         display: block;
         font-size: 2rem;
         color: white;
     }
-    
+
     #hero-sub-text2 {
         display: block;
         font-size: 1rem;
         color: white;
     }
-    
+
     #hero-text .cta {
         text-decoration: none;
         display: inline-block;

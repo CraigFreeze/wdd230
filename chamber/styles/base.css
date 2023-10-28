@@ -43,11 +43,20 @@
     display: none;
 }
 
-header span {
+.header{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.header span {
     font-size: .85rem;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.sideSection {
+    padding-bottom: 2rem;
 }
 
 .header-contact-us,
@@ -217,6 +226,18 @@ section {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+#image-gallery{
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    align-items: center;
+}
+
+figure {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 /* 1st Section */
