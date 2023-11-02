@@ -3,12 +3,12 @@
         background: green;
     } */
 
-    #hero,
-    #contact-box {
+    .hero,
+    .contact-box {
         grid-column: span 3;
     }
 
-    #hero-text{
+    .hero-text{
         position: absolute;
         color: white;
         width: 100%;
@@ -18,19 +18,19 @@
         text-align: center;
     }
     
-    #hero-sub-text1 {
+    .hero-sub-text1 {
         display: block;
         font-size: 2rem;
         color: white;
     }
     
-    #hero-sub-text2 {
+    .hero-sub-text2 {
         display: block;
         font-size: 1rem;
         color: white;
     }
     
-    #hero-text .cta {
+    .hero-text .cta {
         text-decoration: none;
         display: inline-block;
         padding: 10px 30px;
@@ -47,7 +47,7 @@
         grid-column: span 1;
     }
 
-    #hero-sub-text1::after{
+    .hero-sub-text1::after{
         content: "Large";
     }
 }

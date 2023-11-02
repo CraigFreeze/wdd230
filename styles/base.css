@@ -28,24 +28,24 @@ header {
     padding: 1rem;
 }
 
-#profile {
+.profile {
     grid-column: 1 / 5;
     justify-self: end;
     aspect-ratio: 4 / 5;
     width: 7rem;
 }
 
-#hero {
+.hero {
     grid-column: span 3;
     position: relative;
 }
 
-#hero-img {
+.hero-img {
     max-width: 100%;
     height: auto;
 }
 
-#hero-text {
+.hero-text {
     position: absolute;
     top: 10%;
     left: 5%;

@@ -50,7 +50,7 @@
     }
 
 
-    #hero-text {
+    .hero-text {
         position: absolute;
         top: 10%;
         left: 5%;

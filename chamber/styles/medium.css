@@ -52,9 +52,9 @@
         box-shadow: 0 0 50px #333;
     }
 
-    #hero,
-    #contact-box,
-    #location-box {
+    .hero,
+    .contact-box,
+    .location-box {
         grid-column: span 2;
     }
 
@@ -63,7 +63,7 @@
         /* border: 1px solid var(--charcoal); */
     }
 
-    #hero-text {
+    .hero-text {
         position: absolute;
         color: white;
         width: 100%;
@@ -73,19 +73,19 @@
         text-align: center;
     }
 
-    #hero-sub-text1 {
+    .hero-sub-text1 {
         display: block;
         font-size: 2rem;
         color: white;
     }
 
-    #hero-sub-text2 {
+    .hero-sub-text2 {
         display: block;
         font-size: 1rem;
         color: white;
     }
 
-    #hero-text .cta {
+    .hero-text .cta {
         text-decoration: none;
         display: inline-block;
         padding: 10px 30px;
@@ -93,21 +93,21 @@
         background-color: var(--mustard);
     }
 
-    #footer-wrapper {
+    .footer-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 
-    footer #contact-footer {
+    footer .contact-footer {
         grid-column: span 1;
         margin: 2rem;
     }
 
-    footer #page-info {
+    footer .page-info {
         grid-column: span 1;
         font-size: .85rem;
     }
 
-    #hero-sub-text1::after{
+    .hero-sub-text1::after{
         content: "Medium";
     }
 }

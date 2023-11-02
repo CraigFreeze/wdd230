@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-#upper {
+.upper {
     position: sticky;
     top: 0;
     z-index: 999;
@@ -65,7 +65,7 @@
     color: var(--charcoal);
 }
 
-#logo {
+.logo {
     height: 4rem;
 }
 
@@ -106,7 +106,7 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#inline-header-elements {
+.inline-header-elements {
     display: flex;
     justify-content: space-between;
 }
@@ -167,7 +167,7 @@ main {
     margin-right: auto;
 }
 
-#hero-container {
+.hero-container {
     width: 100%;
     height: auto;
     line-height: 0;
@@ -176,7 +176,7 @@ main {
     grid-column-end: -1;
 }
 
-#hero-container::after {
+.hero-container::after {
     content: '';
     position: absolute;
     left: 0;
@@ -188,7 +188,7 @@ main {
     z-index: 1;
 }
 
-#hero-text {
+.hero-text {
     position: absolute;
     color: white;
     width: 100%;
@@ -198,19 +198,19 @@ main {
     z-index: 2;
 }
 
-#hero-sub-text1 {
+.hero-sub-text1 {
     display: block;
     font-size: 1.4rem;
     color: white;
 }
 
-#hero-sub-text2 {
+.hero-sub-text2 {
     display: block;
     font-size: 1.1rem;
     color: white;
 }
 
-#hero-text .cta {
+.hero-text .cta {
     text-decoration: none;
     display: inline-block;
     padding: 10px 30px;
@@ -228,7 +228,7 @@ section {
     padding-bottom: 1rem;
 }
 
-#image-gallery{
+.image-gallery{
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -247,7 +247,7 @@ h3 {
     color: #041157;
 }
 
-#contact-box {
+.contact-box {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -255,9 +255,9 @@ h3 {
     color: white;
 }
 
-#contact-box a,
-#contact-box a:visited,
-#contact-header {
+.contact-box a,
+.contact-box a:visited,
+.contact-header {
     color: white
 }
 
@@ -282,7 +282,7 @@ section ol li {
     margin-left: 2rem;
 }
 
-#location-iframe {
+.location-iframe {
     display: flex;
     justify-content: center;
 }
@@ -303,7 +303,7 @@ footer {
     padding-bottom: 2rem;
 }
 
-#footer-wrapper {
+.footer-wrapper {
     display: grid;
     align-items: center;
     height: auto;
@@ -314,13 +314,13 @@ footer {
     grid-template-rows: 1fr;
 }
 
-footer #contact-footer {
+footer .contact-footer {
     grid-column: span 1;
     margin: 1rem;
     align-items: center;
 }
 
-footer #page-info {
+footer .page-info {
     font-size: .85rem;
     grid-column: span 1;
     text-align: center;
@@ -333,11 +333,12 @@ footer a:hover {
     color: white;
 }
 
-#hero-sub-text1::after{
+.hero-sub-text1::after{
     content: "Small";
 }
 
 .full {
-    grid-column-start: 0;
+    grid-column-start: 1;
     grid-column-end: -1;
+    text-align: center;
 }
