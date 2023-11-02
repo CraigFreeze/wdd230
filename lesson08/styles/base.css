@@ -42,6 +42,7 @@ td {
 
 th:first-child{
     background-color: var(--back);
+    border: 1px solid var(--back);
 }
 
 
