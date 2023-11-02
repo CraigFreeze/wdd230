@@ -1,25 +1,18 @@
-const visitMessage = document.querySelector("#visitMessage");
-const msToDays = 84600000;
+let latestVisitDate = Number(localStorage.getItem("latestVisitDate-ls")) || 0;
 
-let numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
-let lastVisitDate = Number(localStorage.getItem("lastVisit-ls")) || 0;
-let today = Date.now();
-let daysSince = 0;
+// var mockDate = new Date("10/31/2023 16:00:00"); // some mock date
+// var milliseconds = mockDate.getTime(); 
+//latestVisitDate
 
-console.log(Number(today) - Number(localStorage.getItem("lastVisit-ls")))
-daysSince = ((Number(today) - lastVisitDate)) / msToDays || 0;
-console.log(daysSince)
+if (latestVisitDate === 0) {
+        visitMessage.textContent = `Welcome! Let us know if you have any questions.`;
+    } else if (Date.now() - latestVisitDate < 84600000) {
+        visitMessage.textContent = `Back so soon! Awesome!`;
+    } else {
+        let daysSince = (Date.now() - latestVisitDate) / 84600000
+        visitMessage.textContent = `You last visited ${daysSince.toFixed(1)} days ago.`;
+    }
 
-if (numVisits == 0) {
-    visitMessage.textContent = `Welcome! Let us know if you have any questions.`;
-} else if (daysSince < 1) {
-    visitMessage.textContent = `Back so soon! Awesome!`;
-} else {
-    visitMessage.textContent = `You last visited ${daysSince} days ago.`;
 
-}
-
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
-localStorage.setItem("lastVisit-ls", today);
+let newVisitDate = Date.now()
+localStorage.setItem("latestVisitDate-ls", newVisitDate);
