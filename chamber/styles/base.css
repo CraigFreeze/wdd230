@@ -336,3 +336,8 @@ footer a:hover {
 #hero-sub-text1::after{
     content: "Small";
 }
+
+.full {
+    grid-column-start: 0;
+    grid-column-end: -1;
+}
