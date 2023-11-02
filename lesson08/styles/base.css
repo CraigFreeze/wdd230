@@ -57,7 +57,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-    
+    background-color: var(--zebra);
 }
 
 tbody tr td:nth-child(1) {
