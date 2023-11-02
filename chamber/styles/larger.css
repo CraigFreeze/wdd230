@@ -46,4 +46,8 @@
     section {
         grid-column: span 1;
     }
+
+    #hero-sub-text1::after{
+        content: "Large";
+    }
 }

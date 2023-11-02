@@ -106,4 +106,8 @@
         grid-column: span 1;
         font-size: .85rem;
     }
+
+    #hero-sub-text1::after{
+        content: "Medium";
+    }
 }
