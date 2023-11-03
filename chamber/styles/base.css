@@ -244,7 +244,7 @@ figure {
 
 h2,
 h3 {
-    color: #041157;
+    color: var(--charcoal);
 }
 
 .contact-box {
@@ -341,4 +341,5 @@ footer a:hover {
     grid-column-start: 1;
     grid-column-end: -1;
     text-align: center;
+    color: var(--charcoal);
 }
