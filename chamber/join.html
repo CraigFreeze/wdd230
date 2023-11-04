@@ -3,14 +3,14 @@
 <!-- inspiration website: https://www.modernhealth.com/ -->
 
 <head>
-    <title>Reno Chamber of Commerce - Discover</title>
+    <title>Reno Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Craig Freeze">
-    <meta name="description" content="Reno Chamber of Commerce Discover Website">
+    <meta name="description" content="Reno Chamber of Commerce website">
     <meta property="og:url" content="https://craigfreeze.github.io/wdd230/chamber/index.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Reno Chamber of Commerce - Discover">
+    <meta property="og:title" content="Reno Chamber of Commerce">
     <meta property="og:image" content="https://incadventures.com/wp-content/uploads/2020/09/Reno-in-Snow.jpg">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link href="styles/base.css" rel="stylesheet">
@@ -35,7 +35,7 @@
         </header>
         <nav>
             <div class="inline-header-elements">
-                <a href="index.html"><img class="logo" src="images/website-logo.webp"
+                <a href="../index.html"><img id="logo" src="images/website-logo.webp"
                         alt="Reno Chamber of Commerce Logo"></a>
                 <a id="menu" href="#"></a>
             </div>
@@ -48,90 +48,40 @@
             <div class="button"><a href="join.html" class="join large-view">Join</a></div>
         </nav>
     </div>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join Commerce</legend>
+                <label class="top" for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top" for="lname">Last Name* <input type="text" id="lname" name="lname"
+                       required></label>
+                <label class="top" for="position">Title or Position <input type="text" id="position" name="position"
+                        pattern="^[a-zA-Z- ]{7,}"></label>
+                <label class="top" for="email">Email Address* <input type="email" id="email" name="email" required
+                        placeholder="someone@email.com"></label>
+                <label class="top" for="phone">Mobile Phone Number* <input type="telephone" id="lname" name="lname"
+                        required></label>
+                <label class="top" for="organization">Business/Organization Name* <input type="text" id="organization"
+                        name="organization" required></label>
 
-    <main class="with-side-bar">
-        <div class="header full">
-            <span id="visitMessage"></span>
-        </div>
-        <h1 class="full">Discover More About Reno</h1>
-        <section class="sidebar">
-            <div class="sideSection">
-                <h2>Demographics</h2>
-                <ol>
-                    <li>100% do this</li>
-                    <li>50/50 men/women</li>
-                    <li>Numbers</li>
-                </ol>
-            </div>
-            <div class="sideSection">
-                <h2>Events</h2>
-                <ol>
-                    <li>1 week away - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, harum?</li>
-                    <li>Tomorrow - Lorem ipsum dolor sit amet.</li>
-                    <li>Next month - Lorem ipsum dolor sit amet consectetur.</li>
-                </ol>
-            </div>
-            <div class="sideSection">
-                <h2>Attractions</h2>
-                <ol>
-                    <li>Downtown sign!</li>
-                    <li>Business District</li>
-                    <li>Universities</li>
-                </ol>
-            </div>
-        </section>
-        <section class="image-gallery">
-            <h2>Image Gallery</h2>
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno1-small.webp" width="300" height="200">
-                    <img src="images/reno1.webp" alt="Alternative Description" loading="lazy" width="500" height="333">
-                </picture>
-                <figcaption>Local University Campus - University of Nevada Reno</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno2-small.webp" width="300" height="200">
-                    <img src="images/reno2.webp " alt="Alternative Description" loading="lazy" width="500" height="333">
-                </picture>
-                <figcaption>Downtown Reno - Business Opportunity</figcaption>
-            </figure>
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="NP"> NP Membership is for non profit organizatoins and there is no fee</label>
+                <label class="sbs"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                
+                <label class="top" for="description">Business/Organization Description <textarea name="description" id="description" cols="43" rows="10"></textarea></label>
 
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno3-small.webp" width="300" height="161">
-                    <img src="images/reno3.webp " alt="Alternative Description" loading="lazy" width="500" height="268">
-                </picture>
-                <figcaption>Local Community College - Truckee Medows Community College</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno4-small.webp" width="300" height="200">
-                    <img src="images/reno4.webp " alt="Alternative Description" loading="lazy" width="500" height="333">
-                </picture>
-                <figcaption>Business in the Valley</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno5-small.webp" width="300" height="208">
-                    <img src="images/reno5.webp " alt="Alternative Description" loading="lazy" width="500" height="346">
-                </picture>
-                <figcaption>Reno Downtown Sign</figcaption>
-            </figure>
-            <figure>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/reno6-small.webp" width="300" height="200">
-                    <img src="images/reno6.webp " alt="Alternative Description" loading="lazy" width="500" height="333">
-                </picture>
-                <figcaption>Business District</figcaption>
-            </figure>
-        </section>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
 
+            </fieldset>
+            <button type="submit" value="Sign in" class="submitBtn" id="">Apply</button>
+        </form>
     </main>
     <footer>
         <div class="footer-wrapper">
             <div class="contact-footer">
-                <div class="contact-el">
+                <div class="contact-el address">
                     <div class="contact-symbol">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -144,7 +94,7 @@
                             Reno, NV 89523</p>
                     </div>
                 </div>
-                <div class="contact-el">
+                <div class="contact-el phone">
                     <div class="contact-symbol">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -156,7 +106,7 @@
                         <p><span>Phone:</span> <a href="tel://17757867889">+ 1 123 456 7890</a></p>
                     </div>
                 </div>
-                <div class="contact-el">
+                <div class="contact-el email">
                     <div class="contact-symbol">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-send" viewBox="0 0 16 16">
@@ -177,8 +127,10 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/visitmessages.js"></script>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/join.js"></script>
+
 </body>
 
 </html>

@@ -12,7 +12,7 @@ modeButton.addEventListener("click", () => {
 		modeButton.style.fontSize = "2rem"
 		modeButton.textContent = "🔆";
 	} else {
-		main.style.background = "#eee";
+		main.style.background = "#fff";
 		main.style.color = "#000";
 		h2s.forEach(element => {
 			element.style.color = "#041157";
