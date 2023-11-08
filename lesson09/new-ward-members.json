@@ -1,0 +1,18 @@
+{
+    "familyName": "Freeze",
+    "moveInDate": "10/12/2022",
+    "familyMembers": 2,
+    "bishopricVisit": false,
+    "members": [
+        {
+            "name": "Craig",
+            "gender": "M",
+            "birthdate": "05/08/2002"
+        },
+        {
+            "name": "Tyson",
+            "gender": "M",
+            "birthdate": "08/31/2000"
+        }
+    ]
+}
