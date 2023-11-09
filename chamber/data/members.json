@@ -1,0 +1,67 @@
+{
+    "lessons": [
+        {
+            "name": "The Garden of Reno",
+            "address": "700 S Wells Ave Reno, NV 89502",
+            "phone": "(775) 440-1019",
+            "website": "https://thegardenofreno.com",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01/05/2001"
+        },
+        {
+            "name": "Grassroots Books",
+            "address": "660 E Grove St Reno, NV 89502",
+            "phone": "(775) 828-2665",
+            "website": "https://grassrootsbooks.com",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        },
+        {
+            "name": "The Lark",
+            "address": "538 W Plumb Ln Ste C Reno, NV 89509",
+            "phone": "(775) 232-2039",
+            "website": "",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        },
+        {
+            "name": "Sierra Water Plant Shop",
+            "address": "2055 Dickerson Rd Reno, NV 89503",
+            "phone": "(775) 345-5806",
+            "website": "https://www.sierrawatergardens.com",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        },
+        {
+            "name": "Sundance Books and Music",
+            "address": "121 California Ave Reno, NV 89509",
+            "phone": "(775) 786-1188",
+            "website": "https://www.sundancebookstore.com",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        },
+        {
+            "name": "Frankie's Fruit Bar",
+            "address": "205 E Moana Ln Reno, NV 89502",
+            "phone": "(775) 453-9932",
+            "website": "https://frankies-fruit-bar.myshopify.com",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        },
+        {
+            "name": "Urban Scout",
+            "address": "3462 Lakeside Dr Reno, NV 89509",
+            "phone": "(775) 683-9090",
+            "website": "https://www.urbanscout.us",
+            "imageFile": "01",
+            "membershipLevel": "01",
+            "joinDate": "01"
+        }
+    ]
+}

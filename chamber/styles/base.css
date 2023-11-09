@@ -355,7 +355,6 @@ form fieldset {
 form legend {
     color: var(--charcoal);
     margin: 0 1rem;
-    ;
     padding: 0 .5rem;
 }
 
@@ -414,4 +413,9 @@ form textarea {
     background-color: #f8f8f8;
     font-size: .8rem;
     resize: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
