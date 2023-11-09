@@ -4,16 +4,8 @@
             "lesson": "01",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail"
                 }
             ]
         },
@@ -21,16 +13,16 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson01/media-query.html",
+                    "title": "Media Query"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson02/design.html",
+                    "title": "Design"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
                 }
             ]
         },
@@ -38,16 +30,20 @@
             "lesson": "03",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson03/images/css-combinators.png",
+                    "title": "CSS Combinator Screenshot"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://codepen.io/CraigFreeze/pen/ExGRxax?editors=1100",
+                    "title": "Code Pen - Psuedo Elements"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://codepen.io/CraigFreeze/pen/jOXKLmb",
+                    "title": "Code Pen - Hamburger"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
                 }
             ]
         },
@@ -55,16 +51,8 @@
             "lesson": "04",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://codepen.io/CraigFreeze/pen/vYvQKXq?editors=1100",
+                    "title": "Code Pen - Psuedo Classes"
                 }
             ]
         },
@@ -72,16 +60,16 @@
             "lesson": "05",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon - Top 10"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson05/images/landscape.webp",
+                    "title": "webp"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson03/responsive-images.html",
+                    "title": "Responsive Images"
                 }
             ]
         },
@@ -89,16 +77,12 @@
             "lesson": "06",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson03/lazyload.html",
+                    "title": "Lazy Load"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson07/bom.html",
+                    "title": "BOM - localStorage"
                 }
             ]
         },
@@ -106,8 +90,8 @@
             "lesson": "07",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
                 },
                 {
                     "url": "https://",
@@ -123,16 +107,12 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson08/form-start/index.html",
+                    "title": "form-start"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "form.html",
+                    "title": "form.html"
                 }
             ]
         },
@@ -140,16 +120,12 @@
             "lesson": "09",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "new-ward-members.json"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
-                },
-                {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets.html (Fetch API)"
                 }
             ]
         },
@@ -157,16 +133,16 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://placeholder",
+                    "title": "placeholder"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://placeholder",
+                    "title": "placeholder"
                 },
                 {
-                    "url": "https://",
-                    "title": "TITLEHERE"
+                    "url": "https://placeholder",
+                    "title": "placeholder"
                 }
             ]
         }
