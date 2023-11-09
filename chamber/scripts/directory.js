@@ -1,44 +1,59 @@
 const url = 'https://craigfreeze.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
-async function getProphetData() {
+async function getBusinessData() {
     const response = await fetch(url);
     console.log(await response);
-    if (response.ok){
+    if (response.ok) {
         const data = await response.json();
         console.table(data);
-        displayProphets(data.prophets);
+        displayDirectory(data.lessons);
     } else {
         console.log(response.status);
     }
 }
 
-const displayProphets = (prophets) => {
+const displayDirectory = (businesses) => {
     console.log("test:");
-    prophets.forEach((prophet) => {
+    businesses.forEach((business) => {
         let card = document.createElement("section");
-        let fullName = document.createElement("h2");
+        let name = document.createElement("h2");
         let paragraph1 = document.createElement("p");
         let paragraph2 = document.createElement("p");
+        let paragraph3 = document.createElement("p");
+        let paragraph4 = document.createElement("p");
+        let paragraph5 = document.createElement("p");
+        let paragraph6 = document.createElement("p");
+        let paragraph7 = document.createElement("p");
 
         let portrait = document.createElement("img");
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        paragraph1.textContent = `Date of Birth: ${prophet.birthdate}`;
-        paragraph2.textContent = `Place of Birth: ${prophet.birthplace}`;
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
+        name.textContent = `${business.name}`;
+        paragraph1.textContent = `Address: ${business.address}`;
+        paragraph2.textContent = `Phone: ${business.phone}`;
+        paragraph3.textContent = `website: ${business.website}`;
+        paragraph4.textContent = `imageFile: ${business.imageFile}`;
+        paragraph5.textContent = `membershipLevel: ${business.membershipLevel}`;
+        paragraph6.textContent = `joinDate: ${business.joinDate}`;
+
+
+        portrait.setAttribute("src", business.imageFile);
+        portrait.setAttribute("alt", `Logo of ${business.name}`);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "340");
         portrait.setAttribute("height", "440");
 
-        card.appendChild(fullName);
+        card.appendChild(name);
         card.appendChild(paragraph1);
         card.appendChild(paragraph2);
-        card.appendChild(portrait);
+        card.appendChild(paragraph3);
+        card.appendChild(paragraph4);
+        card.appendChild(paragraph5);
+        card.appendChild(paragraph6);
+        card.appendChild(paragraph7);
 
         cards.append(card)
     });
-  }
+}
 
-getProphetData();
+getBusinessData();
