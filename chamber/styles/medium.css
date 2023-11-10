@@ -38,7 +38,6 @@
         margin-bottom: auto;
     }
 
-
     main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 800px;
@@ -107,7 +106,7 @@
         font-size: .85rem;
     }
 
-    .hero-sub-text1::after{
+    .hero-sub-text1::after {
         content: "Medium";
     }
 }

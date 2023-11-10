@@ -50,4 +50,8 @@
     .hero-sub-text1::after{
         content: "Large";
     }
+
+    .grid > section {
+        min-width: unset;
+    }
 }

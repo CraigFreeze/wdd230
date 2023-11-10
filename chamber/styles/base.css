@@ -165,6 +165,8 @@ main {
     max-width: 340px;
     margin-left: auto;
     margin-right: auto;
+    /* gap: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .hero-container {
@@ -222,7 +224,7 @@ main {
 
 /* Section */
 section {
-    grid-column: span 1;
+    /* grid-column: span 1; */
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -240,8 +242,12 @@ figure {
     padding-right: 1rem;
 }
 
-/* 1st Section */
+h1{
+    text-align: center;
+    color: var(--charcoal);
+}
 
+/* 1st Section */
 h2,
 h3 {
     color: var(--charcoal);
@@ -338,15 +344,19 @@ footer a:hover {
 }
 
 .full {
+    grid-template-columns: 1fr;
     grid-column-start: 1;
     grid-column-end: -1;
-    text-align: center;
-    color: var(--charcoal);
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form fieldset {
-    margin: 2rem 0;
-    margin-left: 1rem;
+    max-width: 20rem;
+    margin: 1rem 0;
     border: 1px solid var(--charcoal);
     border-radius: 10px;
     padding: .5rem 2%;
@@ -390,7 +400,7 @@ form button.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    margin: 0 0 .5rem 2%;
     width: 96%;
     max-width: 20rem;
 }
@@ -416,6 +426,33 @@ form textarea {
 }
 
 .grid {
+    grid-column-start: 1;
+    grid-column-end: -1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+.list {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
+
+.grid > section {
+    min-width: 350px;
+    border-style: solid;
+    border-color: var(--salmon);
+    border-radius: 5px;
+    border-width: .125rem;
+    font-size: 1.15rem;
 }

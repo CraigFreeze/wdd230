@@ -7,7 +7,7 @@ async function getBusinessData() {
     if (response.ok) {
         const data = await response.json();
         console.table(data);
-        displayDirectory(data.lessons);
+        displayDirectory(data.businesses);
     } else {
         console.log(response.status);
     }
@@ -57,3 +57,20 @@ const displayDirectory = (businesses) => {
 }
 
 getBusinessData();
+
+// Grid vs List
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+listbutton.addEventListener("click", () => {
+	display.classList.add("list");
+	display.classList.remove("grid");
+});
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+
