@@ -242,7 +242,7 @@ figure {
     padding-right: 1rem;
 }
 
-h1{
+h1 {
     text-align: center;
     color: var(--charcoal);
 }
@@ -349,7 +349,7 @@ footer a:hover {
     grid-column-end: -1;
 }
 
-form{
+form {
     margin-left: auto;
     margin-right: auto;
 }
@@ -425,12 +425,25 @@ form textarea {
     resize: none;
 }
 
+
+.directory {
+    font-size: .8rem;
+}
+
 .grid {
     grid-column-start: 1;
     grid-column-end: -1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.3rem;
+}
+
+.grid .directory {
+    min-width: 300px;
+    border-style: solid;
+    border-color: var(--salmon);
+    border-radius: 5px;
+    border-width: .125rem;
 }
 
 .list {
@@ -440,19 +453,14 @@ form textarea {
     flex-direction: column;
 }
 
-.list section {
+.list .directory:nth-child(even) {
+    background-color: lightyellow;
+}
+
+/* .list {
     grid-column-start: 1;
     grid-column-end: -1;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
-
-.grid > section {
-    min-width: 350px;
-    border-style: solid;
-    border-color: var(--salmon);
-    border-radius: 5px;
-    border-width: .125rem;
-    font-size: 1.15rem;
-}
+} */

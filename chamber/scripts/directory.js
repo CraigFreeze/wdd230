@@ -37,12 +37,14 @@ const displayDirectory = (businesses) => {
         paragraph6.textContent = `joinDate: ${business.joinDate}`;
 
 
-        portrait.setAttribute("src", business.imageFile);
+        // portrait.setAttribute("src", business.imageFile);
+        portrait.setAttribute("src", "images/directory/1business.webp");
         portrait.setAttribute("alt", `Logo of ${business.name}`);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "340");
         portrait.setAttribute("height", "440");
 
+        card.appendChild(portrait);
         card.appendChild(name);
         card.appendChild(paragraph1);
         card.appendChild(paragraph2);
@@ -51,6 +53,8 @@ const displayDirectory = (businesses) => {
         card.appendChild(paragraph5);
         card.appendChild(paragraph6);
         card.appendChild(paragraph7);
+
+        card.classList.add("directory")
 
         cards.append(card)
     });
@@ -64,13 +68,13 @@ const listbutton = document.querySelector("#list");
 const display = document.querySelector("#cards");
 
 listbutton.addEventListener("click", () => {
-	display.classList.add("list");
-	display.classList.remove("grid");
+    display.classList.add("list");
+    display.classList.remove("grid");
 });
 
 gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
 

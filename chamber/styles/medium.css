@@ -109,4 +109,12 @@
     .hero-sub-text1::after {
         content: "Medium";
     }
+    
+    .list section {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1rem;
+    }
 }

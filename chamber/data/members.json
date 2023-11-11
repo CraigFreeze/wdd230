@@ -5,7 +5,7 @@
             "address": "700 S Wells Ave Reno, NV 89502",
             "phone": "(775) 440-1019",
             "website": "https://thegardenofreno.com",
-            "imageFile": "01",
+            "imageFile": "images/directory/1business.webp",
             "membershipLevel": "01",
             "joinDate": "01/05/2001"
         },
@@ -14,16 +14,17 @@
             "address": "660 E Grove St Reno, NV 89502",
             "phone": "(775) 828-2665",
             "website": "https://grassrootsbooks.com",
-            "imageFile": "01",
+            "imageFile": "images/directory/2business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         },
         {
+
             "name": "The Lark",
             "address": "538 W Plumb Ln Ste C Reno, NV 89509",
             "phone": "(775) 232-2039",
             "website": "",
-            "imageFile": "01",
+            "imageFile": "images/directory/3business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         },
@@ -32,7 +33,7 @@
             "address": "2055 Dickerson Rd Reno, NV 89503",
             "phone": "(775) 345-5806",
             "website": "https://www.sierrawatergardens.com",
-            "imageFile": "01",
+            "imageFile": "images/directory/4business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         },
@@ -41,7 +42,7 @@
             "address": "121 California Ave Reno, NV 89509",
             "phone": "(775) 786-1188",
             "website": "https://www.sundancebookstore.com",
-            "imageFile": "01",
+            "imageFile": "images/directory/5business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         },
@@ -50,7 +51,7 @@
             "address": "205 E Moana Ln Reno, NV 89502",
             "phone": "(775) 453-9932",
             "website": "https://frankies-fruit-bar.myshopify.com",
-            "imageFile": "01",
+            "imageFile": "images/directory/6business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         },
@@ -59,7 +60,7 @@
             "address": "3462 Lakeside Dr Reno, NV 89509",
             "phone": "(775) 683-9090",
             "website": "https://www.urbanscout.us",
-            "imageFile": "01",
+            "imageFile": "images/directory/7business.webp",
             "membershipLevel": "01",
             "joinDate": "01"
         }
