@@ -464,3 +464,14 @@ form textarea {
     grid-template-columns: 1fr;
     gap: 1rem;
 } */
+
+.list img {
+    display: none;
+}
+
+.grid img {
+    max-width: 290px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

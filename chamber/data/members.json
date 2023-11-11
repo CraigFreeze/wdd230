@@ -6,7 +6,7 @@
             "phone": "(775) 440-1019",
             "website": "https://thegardenofreno.com",
             "imageFile": "images/directory/1business.webp",
-            "membershipLevel": "01",
+            "membershipLevel": "Bronze",
             "joinDate": "01/05/2001"
         },
         {
@@ -15,8 +15,8 @@
             "phone": "(775) 828-2665",
             "website": "https://grassrootsbooks.com",
             "imageFile": "images/directory/2business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Bronze",
+            "joinDate": "03/06/2011"
         },
         {
 
@@ -25,8 +25,8 @@
             "phone": "(775) 232-2039",
             "website": "",
             "imageFile": "images/directory/3business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Bronze",
+            "joinDate": "04/06/2009"
         },
         {
             "name": "Sierra Water Plant Shop",
@@ -34,8 +34,8 @@
             "phone": "(775) 345-5806",
             "website": "https://www.sierrawatergardens.com",
             "imageFile": "images/directory/4business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Bronze",
+            "joinDate": "09/05/2015"
         },
         {
             "name": "Sundance Books and Music",
@@ -43,8 +43,8 @@
             "phone": "(775) 786-1188",
             "website": "https://www.sundancebookstore.com",
             "imageFile": "images/directory/5business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Silver",
+            "joinDate": "02/25/2019"
         },
         {
             "name": "Frankie's Fruit Bar",
@@ -52,8 +52,8 @@
             "phone": "(775) 453-9932",
             "website": "https://frankies-fruit-bar.myshopify.com",
             "imageFile": "images/directory/6business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Bronze",
+            "joinDate": "01/30/2020"
         },
         {
             "name": "Urban Scout",
@@ -61,8 +61,8 @@
             "phone": "(775) 683-9090",
             "website": "https://www.urbanscout.us",
             "imageFile": "images/directory/7business.webp",
-            "membershipLevel": "01",
-            "joinDate": "01"
+            "membershipLevel": "Gold",
+            "joinDate": "07/04/2012"
         }
     ]
 }
