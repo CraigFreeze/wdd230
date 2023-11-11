@@ -23,7 +23,7 @@ const displayDirectory = (businesses) => {
         // let paragraph4 = document.createElement("p");
         let paragraph5 = document.createElement("p");
         let paragraph6 = document.createElement("p");
-        let paragraph7 = document.createElement("p");
+        // let paragraph7 = document.createElement("p");
 
         let portrait = document.createElement("img");
 
@@ -51,7 +51,7 @@ const displayDirectory = (businesses) => {
         // card.appendChild(paragraph4);
         card.appendChild(paragraph5);
         card.appendChild(paragraph6);
-        card.appendChild(paragraph7);
+        // card.appendChild(paragraph7);
 
         card.classList.add("directory")
 

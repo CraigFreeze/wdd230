@@ -19,14 +19,13 @@
             "joinDate": "03/06/2011"
         },
         {
-
-            "name": "The Lark",
-            "address": "538 W Plumb Ln Ste C Reno, NV 89509",
-            "phone": "(775) 232-2039",
-            "website": "https://www.larksuite.com/en_us",
-            "imageFile": "images/directory/3business.webp",
-            "membershipLevel": "Bronze",
-            "joinDate": "04/06/2009"
+            "name": "Sundance Books and Music",
+            "address": "121 California Ave Reno, NV 89509",
+            "phone": "(775) 786-1188",
+            "website": "https://www.sundancebookstore.com",
+            "imageFile": "images/directory/5business.webp",
+            "membershipLevel": "Silver",
+            "joinDate": "02/25/2019"
         },
         {
             "name": "Sierra Water Plant Shop",
@@ -38,13 +37,14 @@
             "joinDate": "09/05/2015"
         },
         {
-            "name": "Sundance Books and Music",
-            "address": "121 California Ave Reno, NV 89509",
-            "phone": "(775) 786-1188",
-            "website": "https://www.sundancebookstore.com",
-            "imageFile": "images/directory/5business.webp",
-            "membershipLevel": "Silver",
-            "joinDate": "02/25/2019"
+
+            "name": "The Lark",
+            "address": "538 W Plumb Ln Ste C Reno, NV 89509",
+            "phone": "(775) 232-2039",
+            "website": "https://www.larksuite.com/en_us",
+            "imageFile": "images/directory/3business.webp",
+            "membershipLevel": "Bronze",
+            "joinDate": "04/06/2009"
         },
         {
             "name": "Frankie's Fruit Bar",

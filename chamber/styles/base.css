@@ -225,9 +225,7 @@ main {
 /* Section */
 section {
     /* grid-column: span 1; */
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: .5rem;
 }
 
 .image-gallery {
@@ -440,30 +438,34 @@ form textarea {
 
 .grid .directory {
     min-width: 300px;
-    border-style: solid;
-    border-color: var(--salmon);
+    /* border-style: solid; */
+    /* border-color: var(--salmon); */
     border-radius: 5px;
     border-width: .125rem;
-}
-
-.list {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    display: flex;
-    flex-direction: column;
-}
-
-.list .directory:nth-child(even) {
-    background-color: lightyellow;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 2px 3px 4px rgba(122, 122, 122, 0.4);
 }
 
 /* .list {
     grid-column-start: 1;
     grid-column-end: -1;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 } */
+
+.list .directory:nth-child(even) {
+    background-color: lightyellow;
+}
+
+.list {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
 
 .list img {
     display: none;
@@ -472,6 +474,4 @@ form textarea {
 .grid img {
     max-width: 290px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
