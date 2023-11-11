@@ -32,7 +32,7 @@ const displayDirectory = (businesses) => {
         paragraph2.textContent = `${business.phone}`;
         paragraph3.innerHTML = `<a href=${business.website}>${business.website}</a>`;
         // paragraph4.textContent = `imageFile: ${business.imageFile}`;
-        paragraph5.textContent = `${business.membershipLevel}`;
+        paragraph5.textContent = `${business.membershipLevel} Member`;
         paragraph6.textContent = `${business.joinDate}`;
 
 

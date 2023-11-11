@@ -459,12 +459,15 @@ form textarea {
     background-color: lightyellow;
 }
 
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
 .list {
     grid-column-start: 1;
     grid-column-end: -1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
 }
 
 .list img {
@@ -473,5 +476,33 @@ form textarea {
 
 .grid img {
     max-width: 290px;
+    max-height: 170px;
     height: auto;
+    width: auto;
+}
+
+.controls{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.controls #list::before {
+    content: "📖";
+    border: solid;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: white;
+}
+
+.controls #grid::before {
+    content: "⬛️";
+    border: solid;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: white;
+    margin-left: 1rem;
 }

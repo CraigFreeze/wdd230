@@ -110,11 +110,19 @@
         content: "Medium";
     }
 
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
     .list section {
-        grid-column-start: 1;
-        grid-column-end: -1;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr 1.5fr 1fr 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .list h2{
+        font-size: .8rem;
     }
 }
