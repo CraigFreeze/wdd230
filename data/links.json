@@ -125,16 +125,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "https://placeholder",
-                    "title": "placeholder"
-                },
-                {
-                    "url": "https://placeholder",
-                    "title": "placeholder"
-                },
-                {
-                    "url": "https://placeholder",
-                    "title": "placeholder"
+                    "url": "lesson10/weather.html",
+                    "title": "OpenWeatherMap.org API Test"
                 }
             ]
         }
