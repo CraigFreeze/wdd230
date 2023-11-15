@@ -7,7 +7,7 @@ async function getProphetData() {
     if (response.ok){
         const data = await response.json();
         console.table(data);
-        displayProphets(data.businesses);
+        displayProphets(data.prophets);
     } else {
         console.log(response.status);
     }
