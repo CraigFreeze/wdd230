@@ -14,21 +14,19 @@
     box-sizing: border-box;
 }
 
-.upper {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: white;
-}
-
-/* content: '☀️'; */
 #dark-mode {
-    color: black;
     position: absolute;
     font-size: 4rem;
     right: 1rem;
     top: 1rem;
     line-height: 0;
+}
+
+.upper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
 }
 
 .header {
