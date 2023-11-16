@@ -1,18 +1,13 @@
-// For Reno
-// const lat = '39.530';
-// const lon = '-119.814';
-// const key = '6aca58bf95247acb2c0c73a156837509';
-// const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+// Weather for Reno
+const lat = '39.530';
+const lon = '-119.814';
+const key = '6aca58bf95247acb2c0c73a156837509';
+const units = 'imperial';
+const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-
-const lat = '49.756';
-const lon = '6.639';
-const units = 'imperial';
-const key = '6aca58bf95247acb2c0c73a156837509';
-const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${key}`;
 
 async function apiFetch() {
     try {
@@ -20,7 +15,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayResults(data)
-            console.log(data);
+            // console.log(data);
         } else {
             throw Error(await response.text());
         }

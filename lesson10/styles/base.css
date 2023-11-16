@@ -1,12 +1,3 @@
-/*
-    COLOR PALLETE FOR WEBSITE
-    rgb(221, 110, 66); - BURNT SIENNA (ORANGE)
-    rgb(232, 218, 178); - DUTCH WHITE (CREAM)
-    rgb(79, 109, 122); - PAYNE'S GRAY (BLUE)
-    rgb(192, 214, 223); - COLUMBIA BLUE (LIGHT BLUE)
-    rgb(234, 234, 234); - PLATINUM (GRAY)
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +15,7 @@ body {
 
 h1, footer {
     width: 100%;
-    color: rgb(234, 234, 234);
+    color: rgb(255, 255, 255);
     background: rgb(79, 109, 122);
     padding: 2rem;
 }
