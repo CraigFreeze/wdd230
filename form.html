@@ -45,14 +45,15 @@
         <h1 class="form">Form</h1>
         <form action="record.html" method="get">
             <fieldset>
-                <div id="formmessage"></div>
                 <legend>Login</legend>
+                <div id="formmessage"></div>
                 <label class="top" for="username">Username* <input type="text" id="username" name="username"
                         required></label>
-                <label class="top" for="password">Password* <input type="password" id="password1" name="password1"
+                <label class="top" for="password1">Password* <input type="password" id="password1" name="password1"
                         pattern="^[a-zA-Z0-9]{8,}" required></label>
-                <label class="top" for="password">Re-enter Password* <input type="password" id="password2"
-                        name="password2" pattern="^[a-zA-Z0-9]{8,}" required></label>
+                <label class="top" for="password2">Re-enter Password* <input type="password" id="password2"
+                        name="password2" pattern="^[a-zA-Z0-9]{8,}"
+                        placeholder="Letters and numbers (at least 8 characters)" required></label>
                 <label class="top" for="email">Email Address* <input type="email" id="email" name="email" required
                         pattern="[A-Za-z0-9]+@byui\.edu" placeholder="Please use your school email address"
                         title="Please Enter a valid email address"></label>
@@ -61,8 +62,7 @@
                     <span id="rangevalue">0</span>
                 </label>
             </fieldset>
-            <button type="submit" value="Sign in" class="submitBtn" id="">Sign in</button>
-            
+            <button type="submit" value="Sign in" class="submitBtn" id="submitButton">Sign in</button>
         </form>
     </main>
     <footer>
