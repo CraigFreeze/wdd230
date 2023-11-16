@@ -48,15 +48,45 @@
             <div class="button"><a href="join.html" class="join large-view">Join</a></div>
         </nav>
     </div>
-    <main class="full">
+    <main class="view">
+        <div>
+            <section class="card">
+                <h2 class="center">Gold Membership</h2>
+                <ul>
+                    <li>✅ 1 Coaching Calls / Annually</li>
+                    <li>✅ Middle Seating - Commerce Meetings</li>
+                    <li>✅ 3 Networking Requests / Annually</li>
+                    <li class="center">$99.99</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2 class="center">Silver Membership</h2>
+                <ul>
+                    <li>✅ 2 Coaching Calls / Annually</li>
+                    <li>✅ Front Section Seating - Commerce Meetings</li>
+                    <li>✅ 10 Networking Requests / Annually</li>
+                    <li class="center">$149.99</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2 class="center">Bronze Membership</h2>
+                <ul>
+                    <li>✅ Unlimited - Coaching Calls</li>
+                    <li>✅ Unlimited - Networking Requests</li>
+                    <li>✅ Front Row Seating - Commerce Meetings </li>
+                    <li>✅ Broadcast to Commerce Meetings</li>
+                    <li>✅ Directory of Recorded Commerce Meetings </li>
+                    <li class="center">$299.99</li>
+                </ul>
+            </section>
+        </div>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Join Commerce</legend>
                 <label class="top" for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
-                <label class="top" for="lname">Last Name* <input type="text" id="lname" name="lname"
-                       required></label>
+                <label class="top" for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
                 <label class="top" for="position">Title or Position <input type="text" id="position" name="position"
-                        pattern="^[a-zA-Z- ]{7,}"></label>
+                        pattern="^[a-zA-Z0-9- ]{7,}"></label>
                 <label class="top" for="email">Email Address* <input type="email" id="email" name="email" required
                         placeholder="someone@email.com"></label>
                 <label class="top" for="tel">Mobile Phone Number* <input type="tel" id="tel" name="tel"
@@ -65,12 +95,14 @@
                         name="organization" required></label>
 
                 <div>Membership Level</div>
-                <label class="sbs"><input type="radio" name="membership" value="NP"> NP Membership is for non profit organizatoins and there is no fee</label>
+                <label class="sbs"><input type="radio" name="membership" value="NP"> NP Membership is for non profit
+                    organizatoins and there is no fee</label>
                 <label class="sbs"><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
                 <label class="sbs"><input type="radio" name="membership" value="Silver"> Silver Membership</label>
                 <label class="sbs"><input type="radio" name="membership" value="Gold"> Gold Membership</label>
-                
-                <label class="top" for="description">Business/Organization Description <textarea name="description" id="description" cols="43" rows="10"></textarea></label>
+
+                <label class="top" for="description">Business/Organization Description <textarea name="description"
+                        id="description" cols="43" rows="10"></textarea></label>
 
                 <input type="hidden" id="timestamp" name="timestamp" value="">
 
@@ -127,7 +159,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/join.js"></script>
 
