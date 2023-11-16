@@ -39,7 +39,9 @@
     display: grid;
 }
 
-.large-view {
+.large-view,
+.none,
+.list img {
     display: none;
 }
 
@@ -163,9 +165,6 @@ main {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     max-width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-    /* gap: 1rem; */
     margin-bottom: 1rem;
 }
 
@@ -206,31 +205,12 @@ main {
     color: white;
 }
 
-.hero-sub-text2 {
-    display: block;
-    font-size: 1.1rem;
-    color: white;
-}
-
-.hero-text .cta {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 30px;
-    color: black;
-    background-color: var(--mustard);
-}
-
-/* End Hero Section */
-
 /* Section */
 section {
-    /* grid-column: span 1; */
     padding: .5rem;
 }
 
 .image-gallery {
-    display: flex;
-    flex-direction: column;
     vertical-align: center;
     align-items: center;
 }
@@ -242,10 +222,10 @@ figure {
 
 h1 {
     text-align: center;
-    color: var(--charcoal);
 }
 
 /* 1st Section */
+h1,
 h2,
 h3 {
     color: var(--charcoal);
@@ -256,13 +236,18 @@ h3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
     background: var(--salmon);
-    color: white;
 }
 
 .contact-box a,
 .contact-box a:visited,
-.contact-header {
-    color: white
+.contact-box,
+footer,
+.footer-wrapper,
+form button.submitBtn,
+footer a,
+footer a:visited,
+form button.submitBtn {
+    color: white;
 }
 
 .contact-el {
@@ -303,7 +288,6 @@ footer {
     justify-content: space-evenly;
     height: auto;
     background: var(--carolina-blue);
-    color: white;
     padding-bottom: 2rem;
 }
 
@@ -312,7 +296,6 @@ footer {
     align-items: center;
     height: auto;
     background: var(--carolina-blue);
-    color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -331,22 +314,13 @@ footer .page-info {
 
 }
 
-footer a,
-footer a:visited,
-footer a:hover {
-    color: white;
-}
-
-.hero-sub-text1::after {
-    content: "Small";
-}
-
 .full {
     grid-template-columns: 1fr;
     grid-column-start: 1;
     grid-column-end: -1;
 }
 
+main,
 form {
     margin-left: auto;
     margin-right: auto;
@@ -395,7 +369,6 @@ form label.sbs {
 form button.submitBtn {
     border: none;
     background-color: #9c2c13;
-    color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 .5rem 2%;
@@ -438,8 +411,6 @@ form textarea {
 
 .grid .directory {
     min-width: 300px;
-    /* border-style: solid; */
-    /* border-color: var(--salmon); */
     border-radius: 5px;
     border-width: .125rem;
     display: block;
@@ -448,19 +419,14 @@ form textarea {
     box-shadow: 1px 2px 3px 4px rgba(122, 122, 122, 0.4);
 }
 
-/* .list {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    display: flex;
-    flex-direction: column;
-} */
 
 .list .directory:nth-child(even) {
     background-color: lightyellow;
 }
 
 
-.list {
+.list,
+.image-gallery {
     display: flex;
     flex-direction: column;
 }
@@ -468,10 +434,6 @@ form textarea {
 .list {
     grid-column-start: 1;
     grid-column-end: -1;
-}
-
-.list img {
-    display: none;
 }
 
 .grid img {
@@ -529,6 +491,22 @@ form textarea {
     text-align: center;
 }
 
-.card:hover {
+.card:hover,
+.announcement-button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.announcement {
+    z-index: 999;
+    top: 8rem;
+    width: 100vw;
+    background-color: var(--mustard);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.announcement-button {
+    float: right;
+    margin-right: 1rem;
 }

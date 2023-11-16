@@ -1,4 +1,4 @@
-let temp = document.querySelector("#temperature").textContent;
+let temp = document.querySelector("#current-temp").textContent;
 let wSpeed = document.querySelector("#windSpeed").textContent;
 
 if(temp<=50 && wSpeed > 3){

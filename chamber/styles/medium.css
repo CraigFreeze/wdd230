@@ -1,9 +1,7 @@
 @media screen and (min-width: 768px) {
-    /* .header{
-        background-color: purple;
-    } */
 
-    .small-view {
+    .small-view,
+    #menu {
         display: none;
     }
 
@@ -21,14 +19,7 @@
         height: auto;
     }
 
-    #menu {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-    }
-
+    nav,
     .navigation {
         display: flex;
     }
@@ -57,39 +48,18 @@
         grid-column: span 2;
     }
 
-    section {
+    section,
+    footer .contact-footer,
+    footer .page-info {
         grid-column: span 1;
-        /* border: 1px solid var(--charcoal); */
     }
 
     .hero-text {
-        position: absolute;
-        color: white;
-        width: 100%;
         padding: 3rem;
-        top: 35%;
-        line-height: 1;
-        text-align: center;
     }
 
     .hero-sub-text1 {
-        display: block;
         font-size: 2rem;
-        color: white;
-    }
-
-    .hero-sub-text2 {
-        display: block;
-        font-size: 1rem;
-        color: white;
-    }
-
-    .hero-text .cta {
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 30px;
-        color: black;
-        background-color: var(--mustard);
     }
 
     .footer-wrapper {
@@ -97,17 +67,11 @@
     }
 
     footer .contact-footer {
-        grid-column: span 1;
         margin: 2rem;
     }
 
     footer .page-info {
-        grid-column: span 1;
         font-size: .85rem;
-    }
-
-    .hero-sub-text1::after {
-        content: "Medium";
     }
 
     .list {
@@ -122,7 +86,7 @@
         padding: 0.25rem;
     }
 
-    .list h2{
+    .list h2 {
         font-size: .8rem;
     }
 
