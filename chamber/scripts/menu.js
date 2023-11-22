@@ -1,5 +1,5 @@
 // Store the selected elements that we are going to use. 
-const mainnav = document.querySelector('.navigation')
+const mainnav = document.querySelector('.button-wrapper')
 const menubutton = document.querySelector('#menu');
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
