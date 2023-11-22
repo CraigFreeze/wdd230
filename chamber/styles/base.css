@@ -275,6 +275,7 @@ section ol li {
 iframe {
     width: 90%;
     height: 20rem;
+    border: 0;
 }
 
 /* Footer */
