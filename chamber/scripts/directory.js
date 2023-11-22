@@ -3,10 +3,8 @@ const cards = document.querySelector('#cards');
 
 async function getBusinessData() {
     const response = await fetch(url);
-    console.log(await response);
     if (response.ok) {
         const data = await response.json();
-        console.table(data);
         displayDirectory(data.businesses);
     } else {
         console.log(response.status);

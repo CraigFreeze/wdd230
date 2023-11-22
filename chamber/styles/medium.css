@@ -48,9 +48,7 @@
         grid-column: span 2;
     }
 
-    section,
-    footer .contact-footer,
-    footer .page-info {
+    section {
         grid-column: span 1;
     }
 
@@ -60,18 +58,6 @@
 
     .hero-sub-text1 {
         font-size: 2rem;
-    }
-
-    .footer-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    footer .contact-footer {
-        margin: 2rem;
-    }
-
-    footer .page-info {
-        font-size: .85rem;
     }
 
     .list {
