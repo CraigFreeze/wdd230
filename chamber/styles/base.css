@@ -18,6 +18,7 @@ main, header, footer {
     min-width: 340px;
 }
 
+
 #dark-mode {
     position: absolute;
     font-size: 4rem;
@@ -224,13 +225,6 @@ figure {
 
 h1 {
     text-align: center;
-}
-
-/* 1st Section */
-h1,
-h2,
-h3 {
-    color: var(--charcoal);
 }
 
 .contact-box {

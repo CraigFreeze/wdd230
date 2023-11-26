@@ -1,23 +1,31 @@
 const modeButton = document.querySelector("#dark-mode");
 const main = document.querySelector("body");
-const h2s = document.querySelectorAll("section h2");
+const h2s = document.querySelectorAll("h2");
+const h3s = document.querySelectorAll("h3");
+// const h2s = document.querySelectorAll("section h2");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#AAAAA9";
+		main.style.background = "#9c9e98";
 		main.style.color = "#fff";
 		h2s.forEach((element) => {
+			element.style.color = "#fff";
+		});
+		h3s.forEach((element) => {
 			element.style.color = "#fff";
 		});
 		modeButton.style.fontSize = "2rem"
 		modeButton.textContent = "🔆";
 	} else {
 		main.style.background = "#fff";
-		main.style.color = "#A9A9A9";
+		main.style.color = "#000";
 		h2s.forEach(element => {
-			element.style.color = "#041157";
+			element.style.color = "#000";
 		});
-		modeButton.style.fontSize = "4rem"
+		h3s.forEach(element => {
+			element.style.color = "#000";
+		});
+		modeButton.style.fontSize = "3rem"
 		modeButton.textContent = "🕶️";
 	}
 });
