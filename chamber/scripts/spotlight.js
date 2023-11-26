@@ -5,7 +5,7 @@ async function getBusinessData() {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        displaySpotlight(data.businesses);
+        filterRandomSpotlight(data.businesses);
     } else {
         console.log(response.status);
     }
@@ -14,7 +14,7 @@ async function getBusinessData() {
 
 
 // Member Spotlight
-const displaySpotlight = (businesses) => {
+const filterRandomSpotlight = (businesses) => {
     businesses.forEach((business) => {
         if (business.membershipLevel == 'Silver' || business.membershipLevel == 'Gold') {
             let card = document.createElement("section");
