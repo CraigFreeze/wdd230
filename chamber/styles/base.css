@@ -285,7 +285,6 @@ iframe {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: middle;
     height: auto;
     background: var(--carolina-blue);
     align-items: center;
