@@ -41,7 +41,7 @@ async function weatherFetch() {
 }
 
 function displayWeather(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -72,16 +72,16 @@ function formatDate(date){
 function displayForecast(data){
     let time = new Date(data.list[0].dt);
 
-    day1Forcast.innerHTML = `${data.list[0].main.temp}&deg;F`;
+    day1Forcast.innerHTML = `${Math.round(data.list[0].main.temp)}&deg;F`;
     day1ForcastDate.innerHTML = `${formatDate(data.list[0].dt_txt)}`;
 
-    day2Forcast.innerHTML = `${data.list[8].main.temp}&deg;F`;
+    day2Forcast.innerHTML = `${Math.round(data.list[8].main.temp)}&deg;F`;
     day2ForcastDate.innerHTML = `${formatDate(data.list[8].dt_txt)}`;
 
-    day3Forcast.innerHTML = `${data.list[16].main.temp}&deg;F`;
+    day3Forcast.innerHTML = `${Math.round(data.list[16].main.temp)}&deg;F`;
     day3ForcastDate.innerHTML = `${formatDate(data.list[16].dt_txt)}`;
 
-    day4Forcast.innerHTML = `${data.list[24].main.temp}&deg;F`;
+    day4Forcast.innerHTML = `${Math.round(data.list[24].main.temp)}&deg;F`;
     day4ForcastDate.innerHTML = `${formatDate(data.list[24].dt_txt)}`;
 }
 
