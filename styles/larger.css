@@ -4,8 +4,6 @@
         flex-direction: row;
     }
 
-
-
     .navigation li {
         display: block;
         /* change state in small view */
