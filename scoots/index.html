@@ -17,14 +17,15 @@
     <meta property="og:image" content="https">
     <!--Links -->
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/smaller.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/smaller.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <!-- Scripts -->
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/menu.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             <a href="/" id="nav-logo">Scoots</a>
             <ul class="navigation">
                 <li class="navigation-item">
-                    <a href="index.html" class="navigation-links">Home</a>
+                    <a href="index.html" class="navigation-links active">Home</a>
                 </li>
                 <li class="navigation-item">
                     <a href="rentals.html" class="navigation-links">Rentals</a>
@@ -42,15 +43,26 @@
                     <a href="contact.html" class="navigation-links">Contact</a>
                 </li>
                 <li class="navigation-btn">
-                    <a href="reservations.html" class="cta">Reserve</a>
+                    <div class="wrapper-right">
+                        <a href="reservations.html" class="cta">Reserve</a>
+                        <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
+                    </div>
                 </li>
             </ul>
-            <a id="menu" href="#" aria-label="Menu drop down button for navigation">E</a>
+
         </nav>
-        
+
     </header>
     <main>
-        <h1>Motor Scooter Rentals</h1>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Scooter Rentals</h1>
+                <h2>Cozumel Mexico</h2>
+                <p>Locals, Walk-Ins, Enthusiasts, and Cruisers</p>
+            </div>
+            <img src="images/scooter-travel-1.svg"
+                alt="Couple looking at a map on a scooter with Luggage displayed on the side." id="hero-img">
+        </section>
         <section>
             <h2>Contact Us</h2>
         </section>
