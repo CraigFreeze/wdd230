@@ -233,6 +233,9 @@ section:not(.hero):not(.contact) h2 {
 
 section .section-content {
     padding: 1rem;
+    background: #444;
+    border-radius: 0px 0px 20px 20px;
+
 }
 
 /* Weather-Current SECTION */
