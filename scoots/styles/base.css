@@ -30,7 +30,7 @@ body {
     flex-direction: column;
 }
 
-/* HEADER and NAV */
+/* HEADER and NAV and Banner*/
 header {
     background: #333;
     position: sticky;
@@ -38,7 +38,16 @@ header {
     top: 0;
     z-index: 999;
     border-radius: 0px 0px 15px 15px;
-    box-shadow:rgba(184, 184, 184, 0.22) -20px 9px 20px;
+    box-shadow: rgba(184, 184, 184, 0.22) -20px 9px 20px;
+}
+
+.banner {
+    background-color: var(--powder-blue);
+    background-color: var(--timberwolf);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -223,6 +232,10 @@ section:not(.hero) {
     border-radius: 20px;
 }
 
+section:not(.hero):not(.contact) {
+    background: #444;
+}
+
 section:not(.hero):not(.contact) h2 {
     /* background: var(--timberwolf); */
     background: var(--reseda-green);
@@ -233,9 +246,6 @@ section:not(.hero):not(.contact) h2 {
 
 section .section-content {
     padding: 1rem;
-    background: #444;
-    border-radius: 0px 0px 20px 20px;
-
 }
 
 /* Weather-Current SECTION */

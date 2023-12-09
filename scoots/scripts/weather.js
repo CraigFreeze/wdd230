@@ -20,8 +20,6 @@ const curVisibility = document.querySelector('#cur-visibility');
 const curMainDesc = document.querySelector('#cur-main-description');
 
 
-
-
 const day1Forcast = document.querySelector('#day1Forcast');
 const day2Forcast = document.querySelector('#day2Forcast');
 const day3Forcast = document.querySelector('#day3Forcast');
@@ -38,7 +36,7 @@ async function weatherFetch() {
         const response = await fetch(weatherURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayWeather(data)
         } else {
             throw Error(await response.text());
@@ -48,7 +46,7 @@ async function weatherFetch() {
     }
 }
 
-function displayWeather(data){
+function displayWeather(data) {
     curTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     curHumidity.innerHTML = `${Math.round(data.main.humidity)}%`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -57,9 +55,8 @@ function displayWeather(data){
     weatherIcon.setAttribute('alt', capitalizeFirst(desc));
     curFeelsLike.innerHTML = `${Math.round(data.main.feels_like)}&deg;F`;
     curWindSpeed.innerHTML = `${Math.round(data.wind.speed)} mph`;
-    curVisibility.innerHTML = `${Math.round(data.visibility)/1000} km`;
-    curMainDesc.innerHTML = `(${data.weather[0].main} - ${data.weather[0].description})`;
-
+    curVisibility.innerHTML = `${Math.round(data.visibility) / 1000} km`;
+    curMainDesc.innerHTML = `(${data.weather[0].main} - ${capitalizeFirst(data.weather[0].description)})`;
 }
 
 // 3 Day weather forecast creation
@@ -68,7 +65,7 @@ async function forecastFetch() {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayForecast(data);
         } else {
             throw Error(await response.text());
@@ -78,32 +75,49 @@ async function forecastFetch() {
     }
 }
 
-function formatDate(date){
-    return date.substring(6, 11).replace(/-/g, '/')
+function formatDate(dateTime) {
+    let date = "";
+    let monthPart =  dateTime.substring(5, 7);
+    const months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+    let dayPart =  dateTime.substring(8, 10);
+    date = date + months[monthPart - 1] + " " + dayPart;
+    return date;
 }
 
-function displayForecast(data){
-    let time = new Date(data.list[0].dt);
+function displayForecast(data) {
+    data.list.forEach(weatherDay => {
+        if (weatherDay.dt_txt.substring(11) == "15:00:00") {
+            let temp = weatherDay.main.temp;
+            let main = weatherDay.weather[0].main;
+            let desc = weatherDay.weather[0].description;
+            let iconsrc = `https://openweathermap.org/img/w/${weatherDay.weather[0].icon}.png`;
+            let date = formatDate(weatherDay.dt_txt);
 
-    day1Forcast.innerHTML = `${Math.round(data.list[0].main.temp)}&deg;F`;
-    day1ForcastDate.innerHTML = `${formatDate(data.list[0].dt_txt)}`;
+            let ul = document.querySelector("#forecastList");
+            let container = document.createElement("li");
+            let tempSpan = document.createElement("span");
+            let imgIcon = document.createElement("img");
+            let detailsSpan = document.createElement("span");
 
-    day2Forcast.innerHTML = `${Math.round(data.list[8].main.temp)}&deg;F`;
-    day2ForcastDate.innerHTML = `${formatDate(data.list[8].dt_txt)}`;
+            tempSpan.innerHTML = `${date} ${Math.round(temp)}&deg;F`;
+            detailsSpan.innerHTML = `${main} - ${capitalizeFirst(desc)}`;
+            imgIcon.setAttribute('src', iconsrc);
+            imgIcon.setAttribute('alt', capitalizeFirst(desc));
 
-    day3Forcast.innerHTML = `${Math.round(data.list[16].main.temp)}&deg;F`;
-    day3ForcastDate.innerHTML = `${formatDate(data.list[16].dt_txt)}`;
-
-    day4Forcast.innerHTML = `${Math.round(data.list[24].main.temp)}&deg;F`;
-    day4ForcastDate.innerHTML = `${formatDate(data.list[24].dt_txt)}`;
+            container.append(tempSpan);
+            container.append(imgIcon);
+            container.append(detailsSpan);
+            ul.append(container);
+        }
+    });
 }
 
 
-function capitalizeFirst(str){
+function capitalizeFirst(str) {
     const arr = str.split(" ");
     for (var i = 0; i < arr.length; i++) {
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    
+
     }
     const str2 = arr.join(" ");
     return str2;
