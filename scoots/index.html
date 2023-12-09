@@ -24,30 +24,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
     <!-- Scripts -->
-    <script defer src="scripts/main.js"></script>
     <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="nav-foundation">
-                <a href="#" id="nav-logo">Scoots</a>
-                <div class="nav-right">
-                    <a href="reservations.html" class="cta">Reserve</a>
-                    <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
-                </div>
+            <a href="#" id="nav-logo">Scoots</a>
+            <div class="mobile-right">
+                <a href="reservations.html" class="cta">Reserve</a>
+                <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
             </div>
             <ul class="nav-links-container small-hide">
                 <li><a href="index.html" class="nav-links active">Home</a></li>
                 <li><a href="contact.html" class="nav-links">Contact</a></li>
                 <li><a href="rentals.html" class="nav-links">Rentals</a></li>
-                <li><a href="reservations.html" class="nav-links">Reserve</a></li>
+                <li><a href="reservations.html" class="cta-li nav-links">Reserve</a></li>
             </ul>
         </nav>
 
     </header>
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-text">
                 <h1>Scooter Rentals</h1>
@@ -57,15 +56,121 @@
             <img src="images/scooter-travel-1.svg"
                 alt="Couple looking at a map on a scooter with Luggage displayed on the side." id="hero-img">
         </section>
-        <section>
+        <!-- Contact Us Section -->
+        <section class="contact">
             <h2>Contact Us</h2>
+            <!-- Address -->
+            <div>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg></span>
+                </div>
+                <p>
+                    <span>Address:</span>
+                    1234 Reno Commerce Dr.
+                    Reno, NV 89523
+                </p>
+            </div>
+            <!-- Phone -->
+            <div>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg></span>
+                </div>
+                <p>
+                    <span>Phone:</span>
+                    + 1 123 456 7890
+                </p>
+            </div>
+            <!-- Email -->
+            <div>
+                <div>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                        </svg></span>
+                </div>
+                <p>
+                    <span>Email:</span>
+                    info@yoursite.com
+                </p>
+            </div>
         </section>
+        <!-- Weather Section -->
+        <section class="weather-current">
+            <h2>Current Weather </h2>
+            <div class="section-content">
+                <h3>Cozumel, MX</h3>
+                <p id="cur-main-description"></p>
+                <div class="cur-display">
+                    <img id="cur-weather-icon" loading="lazy" src="images/weather-placeholder.webp" alt="display of sky"
+                        width="100" height="100">
+                    <span id="cur-temp">-</span>
+                </div>
+                <ul class="cur-details">
+                    <li>Humidity: <span id="cur-humidity">-</span></li>
+                    <li>Feels Like: <span id="cur-feelsLike">-</span></li>
+                    <li>Visibility: <span id="cur-visibility">-</span></li>
+                    <li>Wind Speed: <span id="cur-windSpeed">-</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather-forecast">
+            <h2>Weather</h2>
+            <div class="section-content">
+                <h3>Cozumel, MX</h3>
+            </div>
+        </section>
+
+
+        <!-- <h3>Upcoming (Forecast)</h3>
+            <ul>
+                <li><span id="day1ForcastDate"></span> - <span id="day1Forcast"></span></li>
+                <li><span id="day2ForcastDate"></span> - <span id="day2Forcast"></span></li>
+                <li><span id="day3ForcastDate"></span> - <span id="day3Forcast"></span></li>
+                <li><span id="day4ForcastDate"></span> - <span id="day4Forcast"></span></li>
+            </ul> -->
+
+        <!-- break point to other code -->
+        <!-- <div data-v-5ed3171e="" class="daily-container block mobile-padding">
+                <h3 data-v-5ed3171e="">8-day forecast</h3>
+                <ul data-v-5ed3171e="" class="day-list" style="">
+                    <li data-v-5ed3171e=""><span data-v-5ed3171e="">Sat, Dec 09</span>
+                        <div data-v-5ed3171e="" class="day-list-values">
+                            <div data-v-5ed3171e=""
+                                style="display: flex; justify-content: flex-start; align-items: center;"><svg
+                                    data-v-5ed3171e="" width="50px" height="50px" viewBox="0 0 148 148"
+                                    class="owm-weather-icon">
+                                    <path
+                                        d="M112.411 57.87c0 11.433-9.27 20.702-20.7 20.702-11.435 0-20.702-9.27-20.702-20.702 0-11.433 9.267-20.701 20.702-20.701 11.43 0 20.7 9.268 20.7 20.701"
+                                        fill="#f15d46"></path>
+                                    <path
+                                        d="M48.874 61.244c.612 0 1.21.055 1.805.137a14.679 14.679 0 01-.332-3.087c0-8.152 6.607-14.759 14.759-14.759 7.93 0 14.38 6.26 14.725 14.104a8.81 8.81 0 015.936-2.298 8.854 8.854 0 018.854 8.856 8.772 8.772 0 01-.59 3.157 10.425 10.425 0 012.065-.207c5.707 0 10.331 4.625 10.331 10.33 0 5.706-4.624 10.331-10.33 10.331H48.873c-7.335 0-13.285-5.948-13.285-13.282s5.95-13.282 13.285-13.282"
+                                        fill="#efefed"></path>
+                                    <path
+                                        d="M83.052 95.131l.423-1.13a2.172 2.172 0 10-4.069-1.523l-.422 1.132a2.172 2.172 0 104.068 1.521M77.548 109.845l1.483-3.962a1.517 1.517 0 00-.89-1.953l-1.226-.46a1.517 1.517 0 00-1.951.89l-1.483 3.965a1.515 1.515 0 00.889 1.951l1.226.459a1.514 1.514 0 001.952-.89M68.555 100.83l1.781-4.766a1.516 1.516 0 00-.89-1.953l-1.226-.458a1.515 1.515 0 00-1.952.89l-1.781 4.765a1.516 1.516 0 00.889 1.952l1.227.46a1.517 1.517 0 001.952-.89M65.864 108.023l.272-.73a2.173 2.173 0 00-4.068-1.523l-.274.732a2.172 2.172 0 004.07 1.521M60.885 89.073l.724-1.935a2.17 2.17 0 10-4.068-1.52l-.723 1.934a2.173 2.173 0 104.068 1.52M55.884 102.45l1.781-4.763a1.517 1.517 0 00-.889-1.955l-1.227-.458a1.519 1.519 0 00-1.953.89l-1.78 4.765a1.516 1.516 0 00.89 1.952l1.224.46a1.519 1.519 0 001.954-.89"
+                                        fill="#3b3c40"></path>
+                                </svg><span data-v-5ed3171e="">13 / 8°C</span></div><span data-v-5ed3171e="" class="sub"
+                                style="width: 70px; text-align: right;">moderate rain</span><span data-v-5ed3171e=""
+                                class="chevron-container"><svg data-v-5ed3171e="" width="12px" height="12px"
+                                    viewBox="0 0 512 512" class="icon-down">
+                                    <path fill="#48484A"
+                                        d="M98.9,184.7l1.8,2.1l136,156.5c4.6,5.3,11.5,8.6,19.2,8.6c7.7,0,14.6-3.4,19.2-8.6L411,187.1l2.3-2.6  c1.7-2.5,2.7-5.5,2.7-8.7c0-8.7-7.4-15.8-16.6-15.8v0H112.6v0c-9.2,0-16.6,7.1-16.6,15.8C96,179.1,97.1,182.2,98.9,184.7z">
+                                    </path>
+                                </svg></span>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
         <section>
             <h2>Rental Options</h2>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat iusto voluptas, enim tempora error. Sint accusamus odio officia cum nihil ratione aspernatur neque, dolorem fuga voluptate placeat in similique doloremque, adipisci eos, possimus doloribus suscipit reiciendis debitis non animi nostrum libero quia? Inventore, autem repellat! Iste dolores obcaecati consectetur eius, explicabo repellendus. Expedita velit veritatis debitis nihil modi harum atque a consequatur tempore numquam temporibus placeat consectetur, deserunt nulla, eligendi repudiandae neque? Quasi molestias, inventore quis ipsum hic animi culpa, laudantium odio doloremque modi dignissimos voluptas quod sed eaque deleniti alias cumque porro vel enim! Doloremque qui alias, consequuntur tenetur et quam quod provident ratione quos optio expedita unde veritatis voluptate architecto blanditiis sapiente dignissimos nobis repudiandae repellendus ullam dolore. Quis repudiandae atque ab, nostrum fugiat expedita reprehenderit aut totam tempore tenetur cumque voluptatem, magnam laboriosam neque veniam ex placeat modi quibusdam odit veritatis possimus cupiditate! Nemo, aliquam. Neque doloremque dolor animi cumque ipsa dolore vel autem expedita nesciunt inventore tempora, vero maxime quasi recusandae ducimus nemo pariatur quisquam eos modi cupiditate est eveniet sint incidunt sequi! Sunt ratione, aliquid et asperiores tenetur aliquam itaque adipisci quod aspernatur iusto laborum placeat similique numquam libero nesciunt beatae doloribus perspiciatis ipsa! Soluta itaque mollitia harum necessitatibus nam amet ea velit delectus eius incidunt, tempore qui ipsam earum fugit officia corrupti reprehenderit aspernatur, quia, deleniti ipsum consectetur quam iusto. Ab magnam cupiditate iusto asperiores odio dolores, adipisci laborum esse cum, non corrupti pariatur ad iure maxime totam architecto delectus? Reprehenderit, suscipit tempora. Nemo blanditiis fugiat tempora facilis placeat nulla sint illum hic consequatur delectus corrupti ut, velit repudiandae consequuntur possimus, cupiditate quas asperiores aliquid? Perspiciatis delectus sit in error quae ab id iste dolores exercitationem aliquam eligendi suscipit fugiat, rerum illum reiciendis nesciunt cum, officia quos beatae unde tempora itaque! Animi praesentium debitis magnam, velit molestias nulla quisquam iste nobis asperiores ex rem nisi pariatur consequatur unde. Praesentium quaerat provident harum magni suscipit ipsum nostrum ullam aperiam veniam sequi quo quasi, illum tempore necessitatibus natus architecto fugit alias mollitia nisi quod iste? Rem id culpa cupiditate enim ea ex nesciunt, sint molestiae sdam sequi, alias pariatur quaerat sapiente accusantium impedit. Praesentium fugiat beatae id non ab sed commodi neque amet atque officiis ad obcaecati nulla voluptates incidunt aspernatur voluptatem, provident voluptatum numquam sint. Debitis perspiciatis facilis vero quasi, minima molestias impedit ipsam eveniet a vel distinctio modi cum sint magni quia voluptates iste. Modi, perferendis quae. Blanditiis sapiente aut totam perspiciatis quas officiis odio, ab ratione doloribus rerum delectus tempore quod, dolore eaque magni nemo soluta laudantium eum deserunt accusamus asperiores? Consectetur quidem consequuntur, dolor explicabo commodi esse excepturi doloremque! Eius quo debitis eum iure non accusantium, ut nam distinctio tempore, quam vero quasi.
         </section>
     </main>
     <footer>

@@ -1,15 +1,38 @@
 @media screen and (min-width: 1000px) {
+
     /* Navigation */
-    #menu{
+    #menu,
+    div.mobile-right {
         display: none;
     }
 
-    .small-hide {
-        display: flex;
+    nav {
+        flex-wrap: unset;
     }
-    .nav-links-container {
+
+    ul.nav-links-container {
         display: flex;
-        background-color: red;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 1rem 0 0;
+        list-style-type: none;
+    }
+
+    .nav-links {
+        background: unset;
+    }
+
+    .cta-li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #12a9bc;
+        font-weight: 700;
+        color: black;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.08), 0 4px 4px 0 rgba(187, 187, 187, 0.12);
     }
 
     /* Hero */
@@ -25,14 +48,11 @@
     }
 
     .hero-text {
-        /* padding-left: rem; */
         text-align: center;
-        /* color: white; */
         color: #352727;
     }
 
     .hero-text h1 {
-        /* font-size: 3rem; */
         font-size: clamp(1rem, 4.4vw, 15rem)
     }
 
@@ -47,8 +67,20 @@
 
     #hero-img {
         min-width: 400px;
-        max-width: 63vw;
+        max-width: 100%;
         padding: 1rem;
         margin: 0 auto;
     }
+    
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .weather-current{
+        grid-column: span 1;
+    }
+    
+    .weather-forecast{
+        grid-column: span 2;
+    } 
 }
