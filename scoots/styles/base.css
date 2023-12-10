@@ -8,6 +8,8 @@
     --timberwolf: #d5cdc3;
     --powder-blue: #92b6da;
     --cinereous: #978378;
+    --section-background: #858587;
+    /* --section-background: #333; */
 
     /* CSS HSL */
     --moonstone: hsla(187, 83%, 40%, 1);
@@ -241,7 +243,7 @@ section:not(.hero) {
 }
 
 section:not(.hero):not(.contact) {
-    background: #444;
+    background: var(--section-background);
 }
 
 section:not(.hero):not(.contact) h2 {
