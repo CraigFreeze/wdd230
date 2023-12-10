@@ -76,6 +76,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    main section:last-child {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
     .weather-current{
         grid-column: span 1;
     }
@@ -83,4 +88,15 @@
     .weather-forecast{
         grid-column: span 2;
     } 
+
+    /* Footer */
+    .fab {
+        font-size: 30px;
+        border-radius: 50%;
+        padding: 20px;
+        color: white;
+        margin: 5px 2px;
+        width: 70px;
+        text-decoration: none;
+    }
 }

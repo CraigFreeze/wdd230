@@ -104,8 +104,8 @@ function displayForecast(data) {
             let imgIcon = document.createElement("img");
             let detailsSpan = document.createElement("span");
 
-            tempSpan.innerHTML = `${date} ${Math.round(temp)}&deg;F`;
-            detailsSpan.innerHTML = `${main} - ${capitalizeFirst(desc)}`;
+            tempSpan.innerHTML = `${date}: ${Math.round(temp)}&deg;F`;
+            detailsSpan.innerHTML = `(${main} - ${capitalizeFirst(desc)})`;
             imgIcon.setAttribute('src', iconsrc);
             imgIcon.setAttribute('alt', capitalizeFirst(desc));
 

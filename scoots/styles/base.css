@@ -4,7 +4,7 @@
     /* --reseda-green: #705B6E; */
     --reseda-green: #AD859D;
     /* --reseda-green: #6d824f; */
-    
+
     --timberwolf: #d5cdc3;
     --powder-blue: #92b6da;
     --cinereous: #978378;
@@ -266,6 +266,13 @@ section .section-content {
     background: #333;
 }
 
+.weather-current .section-content {
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .cur-display {
     display: flex;
     align-items: center;
@@ -285,9 +292,85 @@ section .section-content {
     background: #333;
 }
 
+.forecast-ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.forecast-ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Rental Options */
+.rental-options ul{
+    padding-left: 1rem;
+}
+
+/* Footer */
 footer {
-    /* background: var(--timberwolf); */
     background-color: var(--moonstone);
     padding: 1rem;
     margin-top: 1rem;
+}
+
+.branding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.footer-logo{
+    padding: 0rem 1rem 0rem 1rem;
+    color: black;
+    margin: auto 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social-media{
+    float: right;
+}
+
+.fab {
+    font-size: 15;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    margin: 5px 2px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-google {
+    background: #dd4b39;
+}
+
+.fa-youtube {
+    background: #bb0000;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
