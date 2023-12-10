@@ -1,14 +1,17 @@
 :root {
     /* CSS HEX */
     --moonstone: #12a9bc;
-    --reseda-green: #6d824f;
+    /* --reseda-green: #705B6E; */
+    --reseda-green: #AD859D;
+    /* --reseda-green: #6d824f; */
+    
     --timberwolf: #d5cdc3;
     --powder-blue: #92b6da;
     --cinereous: #978378;
 
     /* CSS HSL */
     --moonstone: hsla(187, 83%, 40%, 1);
-    --reseda-green: hsla(85, 24%, 41%, 1);
+    /* --reseda-green: hsla(85, 24%, 41%, 1); */
     --timberwolf: hsla(33, 18%, 80%, 1);
     --powder-blue: hsla(210, 49%, 71%, 1);
     --cinereous: hsla(21, 13%, 53%, 1);
@@ -39,15 +42,19 @@ header {
     z-index: 999;
     border-radius: 0px 0px 15px 15px;
     box-shadow: rgba(184, 184, 184, 0.22) -20px 9px 20px;
+    border-bottom: 5px solid var(--reseda-green);
 }
 
 .banner {
-    background-color: var(--powder-blue);
     background-color: var(--timberwolf);
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+}
+
+/* fix the alignment on these elements */
+.banner-btn {
+    position: relative;
+    float: right;
 }
 
 nav {
@@ -67,7 +74,7 @@ nav {
     align-items: center;
 }
 
-#nav-logo {
+.nav-logo {
     padding-left: 1rem;
     background-color: white;
     color: black;
@@ -126,7 +133,8 @@ ul.nav-links-container.show {
 }
 
 .small-hide,
-.large-hide {
+.large-hide,
+.none {
     display: none;
 }
 
@@ -271,4 +279,11 @@ section .section-content {
 .weather-forecast {
     color: white;
     background: #333;
+}
+
+footer {
+    /* background: var(--timberwolf); */
+    background-color: var(--moonstone);
+    padding: 1rem;
+    margin-top: 1rem;
 }

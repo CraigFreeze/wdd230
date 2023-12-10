@@ -1,5 +1,4 @@
-const dismissButton = document.querySelector(".announcement-button");
-const announcement = document.querySelector(".announcement");
+
 
 // Key for what days to display message
 let displayDays = {
@@ -19,9 +18,6 @@ if (!displayDays[dayOfWeek]) { // Look up display boolean
     announcement.classList.toggle("none");
 }
 
-dismissButton.addEventListener("click", () => {
-    announcement.classList.toggle("none");
-});
 
 
 

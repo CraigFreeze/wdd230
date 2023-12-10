@@ -18,6 +18,8 @@ const curFeelsLike = document.querySelector('#cur-feelsLike');
 const curWindSpeed = document.querySelector('#cur-windSpeed');
 const curVisibility = document.querySelector('#cur-visibility');
 const curMainDesc = document.querySelector('#cur-main-description');
+const maxTemp = document.querySelector('#maxTemp');
+
 
 
 const day1Forcast = document.querySelector('#day1Forcast');
@@ -57,6 +59,9 @@ function displayWeather(data) {
     curWindSpeed.innerHTML = `${Math.round(data.wind.speed)} mph`;
     curVisibility.innerHTML = `${Math.round(data.visibility) / 1000} km`;
     curMainDesc.innerHTML = `(${data.weather[0].main} - ${capitalizeFirst(data.weather[0].description)})`;
+
+    // Display Banner max temp
+    maxTemp.innerHTML = `Today's highest temperature is ${Math.round(data.main.temp_max)}&deg;F!`;
 }
 
 // 3 Day weather forecast creation
@@ -117,11 +122,17 @@ function capitalizeFirst(str) {
     const arr = str.split(" ");
     for (var i = 0; i < arr.length; i++) {
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-
     }
     const str2 = arr.join(" ");
     return str2;
 }
+
+// Dismiss Buttons
+const dismissBtn = document.querySelector(".banner-btn");
+const banner = document.querySelector(".banner");
+dismissBtn.addEventListener("click", () => {
+    banner.classList.toggle("none");
+});
 
 weatherFetch();
 forecastFetch();
