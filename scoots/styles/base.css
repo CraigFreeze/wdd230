@@ -244,6 +244,8 @@ section:not(.hero) {
 
 section:not(.hero):not(.contact) {
     background: var(--section-background);
+    background-color: var(--timberwolf);
+    color: black;
 }
 
 section:not(.hero):not(.contact) h2 {
