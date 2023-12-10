@@ -260,12 +260,10 @@ section .section-content {
     padding: 1rem;
 }
 
-/* Weather-Current SECTION */
-.weather-current {
-    color: white;
-    background: #333;
+ul:not(.nav-links-container) {
+    padding-left: 1rem;
 }
-
+/* Weather-Current SECTION */
 .weather-current .section-content {
     height: 82%;
     display: flex;
@@ -276,7 +274,6 @@ section .section-content {
 .cur-display {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     font-size: 2.5rem;
 }
 
@@ -287,25 +284,49 @@ section .section-content {
 }
 
 /* Weather-Forecast SECTION */
-.weather-forecast {
-    color: white;
-    background: #333;
-}
-
-.forecast-ul {
-    list-style-type: none;
-    padding-left: 1rem;
-}
-
 .forecast-ul li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/* Rental Options */
-.rental-options ul{
-    padding-left: 1rem;
+/* RENTALS PAGE */
+table {
+    border: none;
+    border-collapse: collapse; 
+    border: 1px solid #000000; 
+    border-spacing: 1;
+    border: solid;
+    border-collapse: separate;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+table tr:first-child td{
+    background-color: var(--moonstone);
+    padding: 1rem;
+}
+
+table tbody tr:nth-child(2) {
+    border: solid;
+}
+
+table tbody tr:nth-child(-n+3) {
+    background-color: var(--reseda-green);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--powder-blue);
+}
+tr:nth-child(even) {
+    background-color: var(--timberwolf);
+}
+
+td {
+    text-align: center;
+    padding: 5px;
 }
 
 /* Footer */
