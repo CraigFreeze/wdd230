@@ -300,6 +300,7 @@ section .section-content {
 .forecast-ul li {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Rental Options */
