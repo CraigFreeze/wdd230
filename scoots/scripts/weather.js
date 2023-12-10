@@ -21,17 +21,6 @@ const curMainDesc = document.querySelector('#cur-main-description');
 const maxTemp = document.querySelector('#maxTemp');
 
 
-
-const day1Forcast = document.querySelector('#day1Forcast');
-const day2Forcast = document.querySelector('#day2Forcast');
-const day3Forcast = document.querySelector('#day3Forcast');
-const day4Forcast = document.querySelector('#day4Forcast');
-const day1ForcastDate = document.querySelector('#day1ForcastDate');
-const day2ForcastDate = document.querySelector('#day2ForcastDate');
-const day3ForcastDate = document.querySelector('#day3ForcastDate');
-const day4ForcastDate = document.querySelector('#day4ForcastDate');
-
-
 //Current weather
 async function weatherFetch() {
     try {

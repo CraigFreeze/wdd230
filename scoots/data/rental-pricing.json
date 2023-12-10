@@ -1,52 +1,52 @@
 {
   "rentals": [
     {
-      "rental-type": "~Honda Metro Scooter",
-      "max-people": 1,
-      "reserve-half": "$20",
-      "reserve-full": "$30",
-      "walk-in-half": "$25",
-      "walk-in-full": "$35"
+      "rentalType": "~Honda Metro Scooter",
+      "maxPeople": 1,
+      "reserveHalf": "$20",
+      "reserveFull": "$30",
+      "walkInHalf": "$25",
+      "walkInFull": "$35"
     },
     {
-      "rental-type": "~Honda Dio Scooter",
-      "max-people": 2,
-      "reserve-half": "$30",
-      "reserve-full": "$40",
-      "walk-in-half": "$35",
-      "walk-in-full": "$45"
+      "rentalType": "~Honda Dio Scooter",
+      "maxPeople": 2,
+      "reserveHalf": "$30",
+      "reserveFull": "$40",
+      "walkInHalf": "$35",
+      "walkInFull": "$45"
     },
     {
-      "rental-type": "~Honda PCX150 Scooter",
-      "max-people": 2,
-      "reserve-half": "$40",
-      "reserve-full": "$50",
-      "walk-in-half": "$45",
-      "walk-in-full": "$55"
+      "rentalType": "~Honda PCX150 Scooter",
+      "maxPeople": 2,
+      "reserveHalf": "$40",
+      "reserveFull": "$50",
+      "walkInHalf": "$45",
+      "walkInFull": "$55"
     },
     {
-      "rental-type": "Honda Pioneer ATV",
-      "max-people": 4,
-      "reserve-half": "$50",
-      "reserve-full": "$70",
-      "walk-in-half": "$60",
-      "walk-in-full": "$80"
+      "rentalType": "Honda Pioneer ATV",
+      "maxPeople": 4,
+      "reserveHalf": "$50",
+      "reserveFull": "$70",
+      "walkInHalf": "$60",
+      "walkInFull": "$80"
     },
     {
-      "rental-type": "Jeep Wrangler - 4 door with a/c",
-      "max-people": 5,
-      "reserve-half": "$70",
-      "reserve-full": "$100",
-      "walk-in-half": "$85",
-      "walk-in-full": "$125"
+      "rentalType": "Jeep Wrangler - 4 door with a/c",
+      "maxPeople": 5,
+      "reserveHalf": "$70",
+      "reserveFull": "$100",
+      "walkInHalf": "$85",
+      "walkInFull": "$125"
     },
     {
-      "rental-type": "Jeep Wrangler - 2 door",
-      "max-people": 4,
-      "reserve-half": "$60",
-      "reserve-full": "$85",
-      "walk-in-half": "$70",
-      "walk-in-full": "$90"
+      "rentalType": "Jeep Wrangler - 2 door",
+      "maxPeople": 4,
+      "reserveHalf": "$60",
+      "reserveFull": "$85",
+      "walkInHalf": "$70",
+      "walkInFull": "$90"
     }
   ]
 }
