@@ -295,7 +295,7 @@ table {
     border: none;
     border-collapse: collapse; 
     border: 1px solid #000000; 
-    border-spacing: 1;
+    border-spacing: 1px;
     border: solid;
     border-collapse: separate;
     border-radius: 10px;
@@ -363,7 +363,7 @@ footer p {
 }
 
 .fab {
-    font-size: 15;
+    font-size: 15px;
     border-radius: 50%;
     padding: 10px;
     color: white;
