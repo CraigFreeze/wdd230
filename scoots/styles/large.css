@@ -71,23 +71,29 @@
         padding: 1rem;
         margin: 0 auto;
     }
-    
+
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    main section:last-child {
+    /* main section:last-child {
         grid-column-start: 1;
         grid-column-end: -1;
-    }
+    } */
 
-    .weather-current{
+    .weather-current {
         grid-column: span 1;
     }
-    
-    .weather-forecast{
+
+    .weather-forecast {
+        grid-column: span 1;
+    }
+
+    /* RENTAL PAGE */
+    /* PRICING SECTION */
+    section.pricing {
         grid-column: span 2;
-    } 
+    }
 
     /* Footer */
     .fab {
