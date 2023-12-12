@@ -168,9 +168,8 @@ section {
 }
 
 /* H1 on each page */
-main section:first-child:not(.hero) {
-    grid-column-start: 1;
-    grid-column-end: -1;
+main section.intro:not(.hero){
+    grid-column: 1 / -1;
     color: white;
     text-align: center;
     background-color: #333;
@@ -299,6 +298,10 @@ ul:not(.nav-links-container),
 
 /* RENTALS PAGE */
 /* PRICING SECTION */
+section.pricing {
+    grid-column: 1 / -1;
+}
+
 table {
     border: none;
     border-collapse: collapse;
