@@ -3,7 +3,7 @@
 
 <head>
     <!--Title -->
-    <title>Home - Scoots</title>
+    <title>Rentals - Scoots</title>
     <!--meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="images/favicon.png">
     <!-- Scripts -->
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/rental-pricing.js"></script>
+    <script defer src="scripts/carousel.js"></script>
 </head>
 
 <body>
@@ -48,51 +50,88 @@
         </nav>
     </header>
     <main>
+        <section class="intro">
+            <h1>Rentals</h1>
+        </section>
         <section class="rental-options">
             <h2>Rental Options</h2>
             <div class="section-content">
                 <ul>
-                    <li>Honda Motor <strong>Scooters</strong></li></strong>
-                    <ul>
-                        <li>Honda Metropolitan (49cc) - 1 person</li>
-                        <li>Honda Dio (110cc) - 2 person</li>
-                        <li>Honda PCX150 (149cc) - 2 person</li>
-                    </ul>
-                    <li>Side-by-Side <strong>ATVs</strong></li>
-                    <ul>
-                        <li>Honda Pioneer 1000 - 4 person</li>
-                    </ul>
-                    <li><strong>Jeeps</strong></li>
-                    <ul>
-                        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
-                        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-                    </ul>
+                    <li>Honda Motor <strong>Scooters</strong>
+                        <ul>
+                            <li>Honda Metropolitan (49cc) - 1 person</li>
+                            <li>Honda Dio (110cc) - 2 person</li>
+                            <li>Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                    </li>
+                    <li>Side-by-Side <strong>ATVs</strong>
+                        <ul>
+                            <li>Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jeeps</strong>
+                        <ul>
+                            <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                            <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
         <section class="pricing">
-            <table class="rental-pricing-table">
-                <tbody>
-                    <tr>
+            <h2>Max Rental Pricing</h2>
+            <div class="section-content">
+                <table class="rental-pricing-table">
+                    <tbody>
+                        <!-- <tr>
                         <td colspan="6">
                             <strong>Max Rental Pricing</strong>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"></td>
-                        <td colspan="2"><strong>Reservation</strong></td>
-                        <td colspan="2"><strong>Walk-In</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Rental Type</strong></td>
-                        <td><strong>Max. Persons</strong></td>
-                        <td><strong>Half Day<br>(3 hrs)</strong></td>
-                        <td><strong>Full Day</strong></td>
-                        <td><strong>Half Day<br>(3 hrs)</strong></td>
-                        <td><strong>Full Day</strong></td>
-                    </tr>
-                </tbody>
-            </table>
+                    </tr> -->
+                        <tr>
+                            <td colspan="2"></td>
+                            <td colspan="2"><strong>Reservation</strong></td>
+                            <td colspan="2"><strong>Walk-In</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rental Type</strong></td>
+                            <td><strong>Max. Persons</strong></td>
+                            <td><strong>Half Day<br>(3 hrs)</strong></td>
+                            <td><strong>Full Day</strong></td>
+                            <td><strong>Half Day<br>(3 hrs)</strong></td>
+                            <td><strong>Full Day</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="product-images">
+            <h2>Rental Images</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev">&#8656;</button>
+                <button class="carousel-btn next">&#8658;</button>
+                <ul class="no-padding">
+                    <li class="slide img-active">
+                        <img src="images/images2/image1.webp" alt="image1">
+                    </li>
+                    <li class="slide">
+                        <img src="images/images2/image2.jpg" alt="image2">
+                    </li>
+                    <li class="slide">
+                        <img src="images/images2/image3.jpg" alt="image3">
+                    </li>
+                    <li class="slide">
+                        <img src="images/images2/image4.jpg" alt="image4">
+                    </li>
+                    <li class="slide">
+                        <img src="images/images2/image5.jpg" alt="image5">
+                    </li>
+                    <li class="slide">
+                        <img src="images/images2/image6.jpg" alt="image6">
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>

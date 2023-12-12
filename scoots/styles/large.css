@@ -76,11 +76,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* main section:last-child {
-        grid-column-start: 1;
-        grid-column-end: -1;
-    } */
-
     .weather-current {
         grid-column: span 1;
     }
