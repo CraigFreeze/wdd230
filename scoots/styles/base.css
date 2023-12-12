@@ -7,17 +7,19 @@
 
     --timberwolf: #d5cdc3;
     --moonstoneHalf: hsla(187, 83%, 40%, .5);
-    --powder-blue: #92b6da;
+    /* --powder-blue: #92b6da; */
+    --powder-blue: hsla(187, 83%, 40%, .5);
+
     --cinereous: #978378;
     --section-background: #858587;
     /* --section-background: #333; */
 
     /* CSS HSL */
-    --moonstone: hsla(187, 83%, 40%, 1);
+    /* --moonstone: hsla(187, 83%, 40%, 1); */
     /* --reseda-green: hsla(85, 24%, 41%, 1); */
-    --timberwolf: hsla(33, 18%, 80%, 1);
+    /* --timberwolf: hsla(33, 18%, 80%, 1);
     --powder-blue: hsla(210, 49%, 71%, 1);
-    --cinereous: hsla(21, 13%, 53%, 1);
+    --cinereous: hsla(21, 13%, 53%, 1); */
 
     /* https://getcssscan.com/css-box-shadow-examples */
 }
