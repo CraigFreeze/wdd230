@@ -172,7 +172,7 @@ section {
 }
 
 /* H1 on each page */
-main section.intro:not(.hero){
+main section.intro:not(.hero) {
     grid-column: 1 / -1;
     color: white;
     text-align: center;
@@ -321,17 +321,15 @@ table {
     word-wrap: break-word;
 }
 
-/* table tr:first-child td{
-    background-color: var(--moonstone);
-    padding: 1rem;
-} */
+table>tbody>tr>td:nth-of-type(1), table>thead>tr>td:nth-of-type(1) {
+    text-align: left;
+}
 
-table tbody tr:nth-child(2) {
+table thead tr:nth-child(2) {
     border: solid;
 }
 
-table tbody tr:nth-child(-n+3) {
-    /* background-color: var(--reseda-green); */
+table thead tr:nth-child(-n+3) {
     background-color: var(--moonstone);
 }
 
@@ -509,12 +507,19 @@ footer {
     margin-top: 1rem;
 }
 
-.branding {
+.branding{
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1300px;
     margin: 0 auto;
+}
+
+.location .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto 0;
 }
 
 footer p {

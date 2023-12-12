@@ -3,7 +3,7 @@
 
 <head>
     <!--Title -->
-    <title>Home - Scoots</title>
+    <title>Rentals - Scoots</title>
     <!--meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,54 +22,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
-        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="images/favicon.jpg">
     <!-- Scripts -->
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/carousel.js"></script>
+    <script defer src="scripts/country-list.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="banner">
-            <span id="maxTemp"></span> <span class="banner-btn">❌</span>
-        </div>
         <nav>
             <a href="#" class="nav-logo">Scoots</a>
             <div class="mobile-right">
-                <a href="reservations.html" class="cta">Reserve</a>
+                <a href="reservations.html" class="cta active">Reserve</a>
                 <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
             </div>
             <ul class="nav-links-container small-hide">
-                <li><a href="index.html" class="nav-links active">Home</a></li>
-                <li><a href="contact.html" class="nav-links">Contact</a></li>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="contact.html" class="nav-links active">Contact</a></li>
                 <li><a href="rentals.html" class="nav-links">Rentals</a></li>
                 <li><a href="reservations.html" class="cta-li nav-links">Reserve</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Scooter Rentals</h1>
-                <h2>Cozumel Mexico</h2>
-                <p>Locals, Walk-ins, Enthusiasts, and Cruisers</p>
-            </div>
-            <img src="images/scooter-travel-1.svg"
-                alt="Couple looking at a map on a scooter with Luggage displayed on the side." id="hero-img">
-        </section>
-        <!-- Intro -->
         <section class="intro">
-            <h1>Home</h1>
+            <h1>Contact</h1>
         </section>
         <!-- Contact Us Section -->
         <section class="contact">
-            <h2>Contact Us</h2>
+            <h2>Contact Information</h2>
             <!-- Address -->
             <div>
                 <div>
@@ -108,7 +93,7 @@
                 </div>
                 <p>
                     <span>Phone:</span>
-                    +52 33 2243 9111
+                    + 52 555 334 4556
                 </p>
             </div>
             <!-- Email -->
@@ -126,91 +111,58 @@
                 </p>
             </div>
         </section>
-        <!-- Images of Cozumel -->
-        <section class="cozumel-images" aria-label="Pictures of the Island">
-            <h2>Cozumel Mexico</h2>
-            <div class="carousel">
-                <button class="carousel-btn prev">&#8592;</button>
-                <button class="carousel-btn next">&#8594;</button>
 
-                <ul class="no-padding">
-                    <li class="slide img-active">
-                        <img src="images/images2/image1.webp" alt="Honda Metro Scooter">
-                    </li>
-                    <li class="slide">
-                        <img src="images/images2/image2.jpg" alt="Honda Dio Scooter">
-                    </li>
-                    <li class="slide">
-                        <img src="images/images2/image3.jpg" alt="Honda PCX150 Scooter">
-                    </li>
-                    <li class="slide">
-                        <img src="images/images2/image4.jpg" alt="Honda Pioneer ATV">
-                    </li>
-                    <li class="slide">
-                        <img src="images/images2/image5.jpg" alt="Jeep Wrangler - 4 Door">
-                    </li>
-                    <li class="slide">
-                        <img src="images/images2/image6.jpg" alt="Jeep Wrangler - 2 Door">
-                    </li>
-                </ul>
+        <section>
+            <h2>Contact Form</h2>
+            <div class="section-content">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <!-- First Name -->
+                        <label for="fname" class="top">
+                            First Name*
+                            <input type="text" id="fname" name="fname" required>
+                        </label>
+                        <!-- Last Name -->
+                        <label for="lname" class="top">
+                            Last Name*
+                            <input type="text" id="lname" name="lname" required>
+                        </label>
+                        <!-- Email -->
+                        <label for="email" class="top">
+                            Email*
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                placeholder="someone@email.com" required>
+                        </label>
+                        <!-- Special Accomodations -->
+                        <label for="description" class="top">
+                            Message
+                            <textarea name="description" id="description" cols="43" rows="10"></textarea>
+                        </label>
+                        <!-- Form Submit Time -->
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                        <button type="submit" value="Contact" class="submitBtn" id="submitBtn">Contact</button>
+                    </fieldset>
+                </form>
             </div>
         </section>
-        <!-- Weather Section -->
-        <section class="weather-current">
-            <h2>Current Weather </h2>
+        <section class="location">
+            <h2>Location</h2>
             <div class="section-content">
-                <div class="weather-text">
-                    <h3>Cozumel, MX</h3>
-                    <p id="cur-main-description"></p>
+                <div>
+                    <h3>Playa del Carmen</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.879420228903!2d-86.95232612397517!3d20.511168705353203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cee05b393f%3A0xe9e6ac2a30c1dc31!2sAv%20Lic%20Benito%20Ju%C3%A1rez%20%26%20Av.%20Rafael%20E.%20Melgar%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702409026545!5m2!1sen!2sus"
+                        width="330" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="cur-display">
-                    <img id="cur-weather-icon" loading="lazy" src="images/weather-placeholder.webp" alt="display of sky"
-                        width="100" height="100">
-                    <span id="cur-temp">-</span>
+                <div>
+                    <h3>Puerta Maya</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d350.4233039075485!2d-86.97548211114972!3d20.475347525989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e574915f5accd%3A0x68d44ee21878dd24!2sCaribbean%20Supermarket!5e0!3m2!1sen!2sus!4v1702408996940!5m2!1sen!2sus"
+                        width="330" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <ul class="cur-details">
-                    <li>Humidity: <span id="cur-humidity">-</span></li>
-                    <li>Feels Like: <span id="cur-feelsLike">-</span></li>
-                    <li>Visibility: <span id="cur-visibility">-</span></li>
-                    <li>Wind Speed: <span id="cur-windSpeed">-</span></li>
-                </ul>
-            </div>
-        </section>
-        <section class="weather-forecast">
-            <h2>Upcoming Weather</h2>
-            <div class="section-content">
-                <h3>5-day forecast</h3>
-                <ul id="forecastList" class="forecast-ul">
-                </ul>
-            </div>
-        </section>
-        <!-- Rental Options -->
-        <section class="rental-options">
-            <h2>Rental Options</h2>
-            <div class="section-content">
-                <ul>
-                    <li>
-                        <h3>Honda Motor Scooters</h3>
-                        <ul>
-                            <li>Honda Metropolitan (49cc) - 1 person</li>
-                            <li>Honda Dio (110cc) - 2 person</li>
-                            <li>Honda PCX150 (149cc) - 2 person</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Side-by-Side ATVs</h3>
-                        <ul>
-                            <li>Honda Pioneer 1000 - 4 person</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Jeeps</h3>
-                        <ul>
-                            <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
-                            <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </section>
     </main>
@@ -218,19 +170,19 @@
         <div class="branding">
             <a href="#" class="footer-logo">Scoots</a>
             <div class="social-media-container">
-                <a href="https://www.facebook.com/" loading="lazy" aria-label="facebook">
+                <a href="https://www.facebook.com/">
                     <ion-icon name="logo-facebook" class="social social-facebook"></ion-icon>
                 </a>
-                <a href="https://twitter.com/?lang=en" loading="lazy" aria-label="twitter">
+                <a href="https://twitter.com/?lang=en">
                     <ion-icon name="logo-twitter" class="social social-twitter"></ion-icon>
                 </a>
-                <a href="https://www.google.com/" loading="lazy" aria-label="google">
+                <a href="https://www.google.com/">
                     <ion-icon name="logo-google" class="social social-google"></ion-icon>
                 </a>
-                <a href="https://www.youtube.com/" loading="lazy" aria-label="youtube">
+                <a href="https://www.youtube.com/">
                     <ion-icon name="logo-youtube" class="social social-youtube"></ion-icon>
                 </a>
-                <a href="https://www.instagram.com/" loading="lazy" aria-label="instagram">
+                <a href="https://www.instagram.com/">
                     <ion-icon name="logo-instagram" class="social social-instagram"></ion-icon>
                 </a>
             </div>

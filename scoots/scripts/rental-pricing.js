@@ -14,7 +14,7 @@ async function getRentalData() {
 function displayRentalData(data) {
     data.rentals.forEach(rental => {
         //Create
-        let table = document.querySelector(".rental-pricing-table");
+        let tbody = document.querySelector(".rental-pricing-table tbody");
         let tr = document.createElement("tr");
         let tdType = document.createElement("td");
         let tdPersons = document.createElement("td");
@@ -39,7 +39,7 @@ function displayRentalData(data) {
         tr.append(tdHalfW);
         tr.append(tdFullW);
         //Append row to table
-        table.append(tr);
+        tbody.append(tr);
     });
 }
 
