@@ -1,7 +1,7 @@
 {
   "rentals": [
     {
-      "rentalType": "~Honda Metro Scooter",
+      "rentalType": "Honda Metro Scooter",
       "maxPeople": 1,
       "reserveHalf": "$20",
       "reserveFull": "$30",
@@ -9,7 +9,7 @@
       "walkInFull": "$35"
     },
     {
-      "rentalType": "~Honda Dio Scooter",
+      "rentalType": "Honda Dio Scooter",
       "maxPeople": 2,
       "reserveHalf": "$30",
       "reserveFull": "$40",
@@ -17,7 +17,7 @@
       "walkInFull": "$45"
     },
     {
-      "rentalType": "~Honda PCX150 Scooter",
+      "rentalType": "Honda PCX150 Scooter",
       "maxPeople": 2,
       "reserveHalf": "$40",
       "reserveFull": "$50",

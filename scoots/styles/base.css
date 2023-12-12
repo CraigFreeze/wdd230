@@ -276,7 +276,8 @@ section .section-content {
 
 ul:not(.nav-links-container),
 .no-padding {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    line-height: 2rem;
 }
 
 /* Weather-Current SECTION */
@@ -429,17 +430,15 @@ td {
 /* FORM STYLING */
 
 form fieldset {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
     border: 4px solid var(--reseda-green);
-    /* border: 4px solid var(--moonstone); */
-    /* border: none; */
     border-radius: 15px;
     padding: .5rem 2%;
 }
 
 form legend {
-    /* background-color: var(--moonstone); */
-    border: 4px solid var(--reseda-green);
     border: 4px solid var(--moonstone);
     border: none;
     border-radius: 15px;
