@@ -86,29 +86,29 @@
                         <legend>Reserve Vehicle</legend>
                         <!-- First Name -->
                         <label for="fname" class="top">
-                            First Name
-                            <input type="text" id="fname" name="fname">
+                            First Name*
+                            <input type="text" id="fname" name="fname" required>
                         </label>
                         <!-- Last Name -->
                         <label for="lname" class="top">
-                            Last Name
-                            <input type="text" id="lname" name="lname">
+                            Last Name*
+                            <input type="text" id="lname" name="lname" required>
                         </label>
                         <!-- Email -->
                         <label for="email" class="top">
-                            Email
+                            Email*
                             <input type="email" id="email" name="email" autocomplete="email"
                                 placeholder="someone@email.com" required>
                         </label>
                         <!-- Phone Number -->
                         <label for="tel" class="top">
-                            Phone Number
-                            <input type="tel" id="tel" name="tel" autocomplete="tel">
+                            Phone Number*
+                            <input type="tel" id="tel" name="tel" autocomplete="tel" required>
                         </label>
                         <!-- Rental Type -->
                         <label for="rental-type" class="top">
-                            Rental Type
-                            <select name="rental-type" id="rental-type">
+                            Rental Type*
+                            <select name="rental-type" id="rental-type" required>
                                 <option>-Select-</option>
                                 <option value="Honda Metro Scooter">Honda Metro Scooter</option>
                                 <option value="Honda Dio Scooter">Honda Dio Scooter</option>
@@ -120,18 +120,18 @@
                         </label>
                         <!-- Number (quantity) -->
                         <label for="quantity" class="top">
-                            Quantity of Rentals
-                            <input type="number" id="quantity" name="number" step="1">
+                            Quantity of Rentals*
+                            <input type="number" id="quantity" name="number" step="1" required>
                         </label>
                         <!-- Date -->
                         <label for="date" class="top">
-                            Reservation Start Day
+                            Reservation Start Day*
                             <input type="date" id="date" name="date">
                         </label>
                         <!-- Period (Length of Time) -->
                         <label for="days" class="top">
-                            Rental Period (Days)
-                            <input type="number" id="days" name="number" step="1">
+                            Rental Period (Days)*
+                            <input type="number" id="days" name="number" step="1" required>
                         </label>
                         <!-- Home Country -->
                         <label for="home-country" class="top">
@@ -147,13 +147,12 @@
                         </label>
                         <!-- Special Accomodations -->
                         <label for="description" class="top">
-                            Special Accomodations
+                            Special Accommodations
                             <textarea name="description" id="description" cols="43" rows="10"></textarea>
                         </label>
                         <!-- Form Submit Time -->
                         <input type="hidden" id="timestamp" name="timestamp" value="">
-                        <button type="submit" value="Apply to Join" class="submitBtn" id="submitBtn">Apply to
-                            Join</button>
+                        <button type="submit" value="Apply to Join" class="submitBtn" id="submitBtn">Reserve</button>
                     </fieldset>
                 </form>
             </div>

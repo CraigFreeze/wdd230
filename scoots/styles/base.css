@@ -115,7 +115,7 @@ ul.show {
     border-radius: 5px;
 }
 
-.active {
+a.active {
     text-decoration: underline;
 }
 
@@ -123,6 +123,7 @@ ul.show {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     padding: 10px 20px;
     height: 3rem;
     border-radius: 5px;
