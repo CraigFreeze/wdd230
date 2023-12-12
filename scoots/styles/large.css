@@ -76,6 +76,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    section {
+        font-size: 1.2rem;
+    }
+    section .section-content {
+        padding: 1rem;
+    }
+
     .weather-current {
         grid-column: span 1;
     }
@@ -85,8 +92,9 @@
     }
 
     /* RENTAL PAGE */
-    /* PRICING SECTION */
-    section.pricing {
+    /* PRICING SECTION / Homepage Image Section */
+    section.pricing,
+    .cozumel-images, .rental-options {
         grid-column: span 2;
     }
 
