@@ -277,12 +277,6 @@ ul:not(.nav-links-container),
 }
 
 /* Weather-Current SECTION */
-.weather-current .section-content {
-    height: 82%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .cur-display {
     display: flex;
@@ -405,25 +399,27 @@ td {
 }
 
 .carousel-btn:hover,
-.carousel-btn:focus{
+.carousel-btn:focus {
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.carousel-btn:focus{
+.carousel-btn:focus {
     outline: 1px solid black;
 }
 
-.carousel-btn.prev{
+.carousel-btn.prev {
     left: 1rem;
 }
-.carousel-btn.next{
+
+.carousel-btn.next {
     right: 1rem;
 }
 
 .img-active {
     opacity: 1;
 }
+
 /* FORM STYLING */
 
 form fieldset {
@@ -446,7 +442,7 @@ form legend {
     padding: .5rem;
 }
 
-form label.top{
+form label.top {
     display: block;
     padding-top: 1rem;
     color: black;
@@ -530,41 +526,39 @@ footer p {
     font-size: 2rem;
 }
 
-.social-media {
-    float: right;
+.social-media-container a {
+    text-decoration: none;
 }
 
-.fab {
-    font-size: 15px;
+.social {
+    font-size: 30px;
     border-radius: 50%;
     padding: 10px;
     color: white;
     margin: 5px 2px;
-    width: 35px;
-    text-decoration: none;
 }
 
-.fab:hover {
+.social:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
+.social-facebook {
     background: #3B5998;
 }
 
-.fa-twitter {
+.social-twitter {
     background: #55ACEE;
 }
 
-.fa-google {
+.social-google {
     background: #dd4b39;
 }
 
-.fa-youtube {
+.social-youtube {
     background: #bb0000;
 }
 
-.fa-instagram {
+.social-instagram {
     background: #125688;
     color: white;
 }
