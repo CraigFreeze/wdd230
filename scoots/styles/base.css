@@ -123,7 +123,6 @@ ul.show {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     padding: 10px 20px;
     height: 3rem;
     border-radius: 5px;
@@ -401,7 +400,7 @@ td {
     color: rgba(225, 225, 225, .5);
     cursor: pointer;
     border-radius: .25rem;
-    padding: 0 .5 rem;
+    padding: 0 .5rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -424,6 +423,82 @@ td {
 
 .img-active {
     opacity: 1;
+}
+/* FORM STYLING */
+
+form fieldset {
+    margin: 1rem 0;
+    border: 4px solid var(--reseda-green);
+    /* border: 4px solid var(--moonstone); */
+    /* border: none; */
+    border-radius: 15px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    /* background-color: var(--moonstone); */
+    border: 4px solid var(--reseda-green);
+    border: 4px solid var(--moonstone);
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: .5rem;
+}
+
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .5rem;
+    color: #555;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form button.submitBtn {
+    border: none;
+    background-color: var(--moonstone);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 .5rem 2%;
+    width: 96%;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form textarea {
+    height: 150px;
+    padding: .65rem;
+    box-sizing: border-box;
+    border: 1px solid var(--charcoal);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: .8rem;
+    resize: none;
+    width: 100%;
 }
 
 /* Footer */

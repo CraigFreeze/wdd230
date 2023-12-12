@@ -26,7 +26,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
         padding: 10px 20px;
         border-radius: 5px;
         background: #12a9bc;
@@ -79,22 +78,27 @@
     section {
         font-size: 1.2rem;
     }
+
     section .section-content {
         padding: 1rem;
     }
 
-    .weather-current {
+    .weather-current,
+    .weather-forecast,
+    .reserve-form {
         grid-column: span 1;
     }
 
-    .weather-forecast {
-        grid-column: span 1;
+    .reserve-form {
+        grid-row: span 2;
     }
 
     /* RENTAL PAGE */
     /* PRICING SECTION / Homepage Image Section */
     section.pricing,
-    .cozumel-images, .rental-options {
+    .cozumel-images,
+    .rental-options,
+    .rental-agreement {
         grid-column: span 2;
     }
 

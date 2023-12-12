@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!--Title -->
+    <title>Rentals - Scoots</title>
+    <!--meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SEO -->
+    <meta name="author" content="Craig Freeze">
+    <meta name="description"
+        content="Scoots is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta property="og:url" content="https://craigfreeze.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scoots - WDD230 Web Development BYUI 2023">
+    <meta property="og:image" content="https">
+    <!--Links -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="images/favicon.jpg">
+    <!-- Scripts -->
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/country-list.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="nav-logo">Scoots</a>
+            <div class="mobile-right">
+                <a href="reservations.html" class="cta active">Reserve</a>
+                <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
+            </div>
+            <ul class="nav-links-container small-hide">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
+                <li><a href="rentals.html" class="nav-links">Rentals</a></li>
+                <li><a href="reservations.html" class="cta-li nav-links active">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Reservations</h1>
+        </section>
+        <section class="rental-options">
+            <h2>Rental Options</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Honda Motor <strong>Scooters</strong>
+                        <ul>
+                            <li>Honda Metropolitan (49cc) - 1 person</li>
+                            <li>Honda Dio (110cc) - 2 person</li>
+                            <li>Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                    </li>
+                    <li>Side-by-Side <strong>ATVs</strong>
+                        <ul>
+                            <li>Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jeeps</strong>
+                        <ul>
+                            <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                            <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reserve-form">
+            <h2>Reservation Form</h2>
+            <div class="section-content">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Reserve Vehicle</legend>
+                        <!-- First Name -->
+                        <label for="fname" class="top">
+                            First Name
+                            <input type="text" id="fname" name="fname">
+                        </label>
+                        <!-- Last Name -->
+                        <label for="lname" class="top">
+                            Last Name
+                            <input type="text" id="lname" name="lname">
+                        </label>
+                        <!-- Email -->
+                        <label for="email" class="top">
+                            Email
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                placeholder="someone@email.com" required>
+                        </label>
+                        <!-- Phone Number -->
+                        <label for="tel" class="top">
+                            Phone Number
+                            <input type="tel" id="tel" name="tel" autocomplete="tel">
+                        </label>
+                        <!-- Rental Type -->
+                        <label for="rental-type" class="top">
+                            Rental Type
+                            <select name="rental-type" id="rental-type">
+                                <option>-Select-</option>
+                                <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                                <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                                <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                                <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                                <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                            </select>
+                        </label>
+                        <!-- Number (quantity) -->
+                        <label for="quantity" class="top">
+                            Quantity of Rentals
+                            <input type="number" id="quantity" name="number" step="1">
+                        </label>
+                        <!-- Date -->
+                        <label for="date" class="top">
+                            Reservation Start Day
+                            <input type="date" id="date" name="date">
+                        </label>
+                        <!-- Period (Length of Time) -->
+                        <label for="days" class="top">
+                            Rental Period (Days)
+                            <input type="number" id="days" name="number" step="1">
+                        </label>
+                        <!-- Home Country -->
+                        <label for="home-country" class="top">
+                            Home Country
+                            <select name="home-country" id="home-country">
+                                <option>-Select-</option>
+                            </select>
+                        </label>
+                        <!-- Cruise Line -->
+                        <label for="cruise-line" class="top">
+                            Cruise Line
+                            <input type="text" id="cruise-line" name="cruise-line">
+                        </label>
+                        <!-- Special Accomodations -->
+                        <label for="description" class="top">
+                            Special Accomodations
+                            <textarea name="description" id="description" cols="43" rows="10"></textarea>
+                        </label>
+                        <!-- Form Submit Time -->
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                        <button type="submit" value="Apply to Join" class="submitBtn" id="submitBtn">Apply to
+                            Join</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="rental-agreement">
+            <h2>Rental Agreement</h2>
+            <div class="section-content">
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li><strong>Unlimited</strong> mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="branding">
+            <a href="#" class="footer-logo">Scoots</a>
+            <div class="social-media">
+                <!-- <a href="#" class="nav-logo">Scoots</a> -->
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.com/"><i class="fab fa-google"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p> © <span id="year">year</span> - Craig Freeze - WDD 230 BYUI - All Rights Reserved</p>
+
+    </footer>
+</body>
+
+</html>

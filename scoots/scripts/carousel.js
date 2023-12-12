@@ -1,8 +1,13 @@
 const buttons = document.querySelectorAll(".carousel-btn");
 const images = document.querySelectorAll(".slide");
 const descriptionEl = document.querySelector(".carousel-description");
-descriptionEl.textContent = document.querySelector(".img-active img").alt;
 let index = 0;
+
+function descriptionExists(){
+    if (descriptionEl) {
+        descriptionEl.textContent = document.querySelector(".img-active img").alt;
+    }
+}
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -22,6 +27,8 @@ buttons.forEach(button => {
             }
             images[index].classList.add("img-active");
         }
-        descriptionEl.textContent = document.querySelector(".img-active img").alt;
+        descriptionExists()
     });
 });
+
+descriptionExists()
