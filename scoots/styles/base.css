@@ -6,6 +6,7 @@
     /* --reseda-green: #6d824f; */
 
     --timberwolf: #d5cdc3;
+    --moonstoneHalf: hsla(187, 83%, 40%, .5);
     --powder-blue: #92b6da;
     --cinereous: #978378;
     --section-background: #858587;
@@ -333,6 +334,7 @@ table tbody tr:nth-child(-n+3) {
 
 tr:nth-child(odd) {
     background-color: var(--powder-blue);
+    background-color: var(--moonstoneHalf);
 }
 
 tr:nth-child(even) {
@@ -366,8 +368,6 @@ td {
     object-position: center;
     border-radius: 0px 0px 20px 20px;
 }
-
-
 
 .carousel-description {
     position: absolute;
