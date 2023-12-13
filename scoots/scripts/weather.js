@@ -44,6 +44,8 @@ function displayWeather(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', capitalizeFirst(desc));
+    weatherIcon.setAttribute('width', "100");
+    weatherIcon.setAttribute('height', "100");
     curFeelsLike.innerHTML = `${Math.round(data.main.feels_like)}&deg;F`;
     curWindSpeed.innerHTML = `${Math.round(data.wind.speed)} mph`;
     curVisibility.innerHTML = `${Math.round(data.visibility) / 1000} km`;
@@ -97,6 +99,8 @@ function displayForecast(data) {
             detailsSpan.innerHTML = `(${main} - ${capitalizeFirst(desc)})`;
             imgIcon.setAttribute('src', iconsrc);
             imgIcon.setAttribute('alt', capitalizeFirst(desc));
+            imgIcon.setAttribute('width', "50");
+            imgIcon.setAttribute('height', "50");
 
             container.append(tempSpan);
             container.append(imgIcon);

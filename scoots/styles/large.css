@@ -28,7 +28,7 @@
         align-items: center;
         padding: 10px 20px;
         border-radius: 5px;
-        background: #12a9bc;
+        background: var(--moonstone);
         font-weight: 700;
         color: black;
         box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.08), 0 4px 4px 0 rgba(187, 187, 187, 0.12);
@@ -43,12 +43,12 @@
         margin: 0 auto;
         width: 100vw;
         height: 89vh;
-        background-color: #12a9bc;
+        background-color: var(--moonstone);
     }
 
     .hero-text {
         text-align: center;
-        color: #352727;
+        color: var(--background);
     }
 
     .hero-text h1 {
@@ -79,15 +79,10 @@
         font-size: 1.2rem;
     }
 
-    section .section-content {
+    section .container-content {
         padding: 1rem;
     }
 
-    /* .location .section-content {
-        display: flex;
-        justify-content: space-around;
-        margin: auto 0;
-    } */
     
     .weather-current,
     .weather-forecast,

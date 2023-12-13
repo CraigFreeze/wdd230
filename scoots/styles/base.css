@@ -1,26 +1,11 @@
 :root {
-    /* CSS HEX */
+    /* CSS Color Variables */
     --moonstone: #12a9bc;
-    /* --reseda-green: #705B6E; */
-    --reseda-green: #AD859D;
-    /* --reseda-green: #6d824f; */
-
+    --muted-purple: #AD859D;
     --timberwolf: #d5cdc3;
-    --moonstoneHalf: hsla(187, 83%, 40%, .25);
-    /* --powder-blue: #92b6da; */
+    --moonstone-half: hsla(187, 83%, 40%, .25);
     --powder-blue: hsla(187, 83%, 40%, .5);
-
-    --cinereous: #978378;
-    --section-background: #858587;
-    /* --section-background: #333; */
-
-    /* CSS HSL */
-    /* --moonstone: hsla(187, 83%, 40%, 1); */
-    /* --reseda-green: hsla(85, 24%, 41%, 1); */
-    /* --timberwolf: hsla(33, 18%, 80%, 1);
-    --powder-blue: hsla(210, 49%, 71%, 1);
-    --cinereous: hsla(21, 13%, 53%, 1); */
-
+    --background: #333;
     /* https://getcssscan.com/css-box-shadow-examples */
 }
 
@@ -33,21 +18,21 @@
 }
 
 body {
-    background-color: #333;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
 }
 
 /* HEADER and NAV and Banner*/
 header {
-    background: #333;
+    background: var(--background);
     position: sticky;
     width: 100%;
     top: 0;
     z-index: 999;
     border-radius: 0px 0px 15px 15px;
     box-shadow: rgba(184, 184, 184, 0.22) -20px 9px 20px;
-    border-bottom: 5px solid var(--reseda-green);
+    border-bottom: 5px solid var(--muted-purple);
 }
 
 .banner {
@@ -69,7 +54,7 @@ nav {
     justify-content: space-between;
     height: 75px;
     padding: 1rem 0;
-    background-color: #333;
+    background-color: var(--background);
     border-radius: 0px 0px 15px 15px;
     max-width: 1300px;
 }
@@ -130,7 +115,7 @@ a.active {
     padding: 10px 20px;
     height: 3rem;
     border-radius: 5px;
-    background: #12a9bc;
+    background: var(--moonstone);
     font-weight: 700;
     color: black;
     margin-right: 1rem;
@@ -176,7 +161,7 @@ main section.intro:not(.hero) {
     grid-column: 1 / -1;
     color: white;
     text-align: center;
-    background-color: #333;
+    background-color: var(--background);
     box-shadow: unset;
     margin-top: 2rem;
     text-decoration: underline;
@@ -190,7 +175,7 @@ main section.intro:not(.hero) {
     justify-content: center;
     align-items: center;
     height: 89vh;
-    background-color: #12a9bc;
+    background-color: var(--moonstone);
 }
 
 .hero-text {
@@ -223,17 +208,13 @@ main section.intro:not(.hero) {
 /* Contact SECTION */
 .contact {
     background: var(--timberwolf);
-    border-top: solid 1rem var(--reseda-green);
-    border-bottom: solid 1rem var(--reseda-green);
-    border: solid 8px var(--reseda-green);
+    border-top: solid 1rem var(--muted-purple);
+    border-bottom: solid 1rem var(--muted-purple);
+    border: solid 8px var(--muted-purple);
     border-radius: 1rem;
     grid-column: 1/-1;
     padding: 1rem;
     margin: 1rem;
-}
-
-.contact h2 {
-    text-decoration: underline;
 }
 
 .contact>div {
@@ -257,24 +238,23 @@ section:not(.hero) {
 }
 
 section:not(.hero):not(.contact) {
-    background: var(--section-background);
     background-color: var(--timberwolf);
     color: black;
 }
 
 section:not(.hero):not(.contact) h2 {
     /* background: var(--timberwolf); */
-    background: var(--reseda-green);
+    background: var(--muted-purple);
     color: black;
     padding: .75rem;
     border-radius: 20px 20px 0px 0px;
 }
 
-section .section-content {
+section .container-content {
     padding: .4rem;
 }
 
-ul:not(.nav-links-container),
+ul:not(.nav-links-container):not(.cur-details),
 .no-padding {
     padding-left: 2rem;
     line-height: 2rem;
@@ -321,7 +301,8 @@ table {
     word-wrap: break-word;
 }
 
-table>tbody>tr>td:nth-of-type(1), table>thead>tr>td:nth-of-type(1) {
+table>tbody>tr>td:nth-of-type(1),
+table>thead>tr>td:nth-of-type(1) {
     text-align: left;
 }
 
@@ -331,11 +312,11 @@ table thead tr:nth-child(2) {
 
 table thead tr:nth-child(-n+3) {
     background-color: var(--moonstone);
+    font-weight: 700;
 }
 
 tr:nth-child(odd) {
-    background-color: var(--powder-blue);
-    background-color: var(--moonstoneHalf);
+    background-color: var(--moonstone-half);
 }
 
 tr:nth-child(even) {
@@ -386,6 +367,7 @@ td {
     padding: 0 .1rem;
     background-color: rgba(51, 51, 51, .7);
     border-radius: 10px 10px 10px 10px;
+    padding: .5rem 0;
 }
 
 .carousel-btn {
@@ -430,7 +412,7 @@ td {
 form fieldset {
     display: flex;
     flex-direction: column;
-    border: 4px solid var(--reseda-green);
+    border: 4px solid var(--muted-purple);
     border-radius: 15px;
     padding: .5rem 2%;
 }
@@ -480,7 +462,7 @@ form button.submitBtn {
 }
 
 form label.top input:required {
-    border-left: var(--moonstoneHalf) solid 6px;
+    border-left: var(--moonstone-half) solid 6px;
 }
 
 form label.top input:required:valid {
@@ -491,7 +473,7 @@ form textarea {
     height: 150px;
     padding: .65rem;
     box-sizing: border-box;
-    border: 1px solid var(--charcoal);
+    border: 1px solid var(--background);
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: .8rem;
@@ -506,6 +488,7 @@ iframe {
     border-radius: 15px;
     margin-top: 1rem;
 }
+
 /* Footer */
 footer {
     background-color: var(--moonstone);
@@ -513,7 +496,7 @@ footer {
     margin-top: 1rem;
 }
 
-.branding{
+.branding {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -521,7 +504,7 @@ footer {
     margin: 0 auto;
 }
 
-/* .location .section-content {
+/* .location .container-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
