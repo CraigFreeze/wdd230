@@ -83,10 +83,7 @@
         padding: 1rem;
     }
 
-    
-    .weather-current,
-    .weather-forecast,
-    .reserve-form {
+    .span-one {
         grid-column: span 1;
     }
 
@@ -96,10 +93,7 @@
 
     /* RENTAL PAGE */
     /* PRICING SECTION / Homepage Image Section */
-    .cozumel-images,
-    .rental-options,
-    .rental-agreement,
-    .location {
+    .span-two {
         grid-column: span 2;
     }
 

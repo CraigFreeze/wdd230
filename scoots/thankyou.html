@@ -3,19 +3,18 @@
 
 <head>
     <!--Title -->
-    <title>Contact - Scoots</title>
+    <title>Thank you - Scoots</title>
     <!--meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->
     <meta name="author" content="Craig Freeze">
     <meta name="description"
-        content="Contact Scoots, which is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
-    <meta property="og:url" content="https://craigfreeze.github.io/wdd230/scoots/contact.html">
+        content="Scoots is a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta property="og:url" content="https://craigfreeze.github.io/wdd230/scoots/thankyou.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Scoots - Contact Us; Cozumel Mexico Vehicle Rental Company">
-    <meta property="og:image"
-        content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
+    <meta property="og:title" content="Scoots Thanks You!; Cozumel Mexico Vehicle Rental Company">
+    <meta property="og:image" content="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/scooter_rental_cozumel-13.jpg">
     <!--Links -->
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
@@ -25,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.jpg">
     <!-- Scripts -->
-    <script defer src="scripts/menu.js"></script>
-    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
@@ -34,24 +33,42 @@
         <nav>
             <a href="index.html" class="nav-logo">Scoots</a>
             <div class="mobile-right">
-                <a href="reservations.html" class="cta active">Reserve</a>
+                <a href="reservations.html" class="cta">Reserve</a>
                 <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
             </div>
             <ul class="nav-links-container small-hide">
-                <li><a href="index.html" class="nav-links">Home</a></li>
-                <li><a href="contact.html" class="nav-links active">Contact</a></li>
+                <li><a href="index.html" class="nav-links active">Home</a></li>
+                <li><a href="contact.html" class="nav-links">Contact</a></li>
                 <li><a href="rentals.html" class="nav-links">Rentals</a></li>
                 <li><a href="reservations.html" class="cta-li nav-links">Reserve</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Intro -->
         <section class="intro span-all">
-            <h1>Contact</h1>
+            <h1>Thank you</h1>
+        </section>
+        <!-- Thank you section -->
+        <section class="span-all">
+            <h2>Your request has been received!</h2>
+            <div class="container-content">
+                <ul>
+                    <li>
+                        <h3>Next Steps</h3>
+                        <ul>
+                            <li>A certified scoots professional will be in contact with you to ensure that we are helping you the best we can!</li>
+                            <li>Prepare any documents for furthered communication.</li>
+                            <li>In the meantime, never hesitate to reach back out with more questions.</li>
+                            <li>For more immediate attention, contact our 24/7 phone number directly (see more contact information below).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Contact Us Section -->
         <section class="contact span-all">
-            <h2>Contact Information</h2>
+            <h2>Contact Us</h2>
             <!-- Address -->
             <div>
                 <div>
@@ -90,7 +107,7 @@
                 </div>
                 <p>
                     <span>Phone:</span>
-                    + 52 555 334 4556
+                    +52 33 2243 9111
                 </p>
             </div>
             <!-- Email -->
@@ -106,53 +123,6 @@
                     <span>Email:</span>
                     rentals@scoots.com
                 </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Contact Form</h2>
-            <div class="container-content">
-                <form method="get" action="thankyou.html">
-                    <fieldset>
-                        <legend>Contact Us</legend>
-                        <!-- First Name -->
-                        <label for="fname" class="top">
-                            First Name*
-                            <input type="text" id="fname" name="fname" required>
-                        </label>
-                        <!-- Last Name -->
-                        <label for="lname" class="top">
-                            Last Name*
-                            <input type="text" id="lname" name="lname" required>
-                        </label>
-                        <!-- Email -->
-                        <label for="email" class="top">
-                            Email*
-                            <input type="email" id="email" name="email" autocomplete="email"
-                                placeholder="someone@email.com" required>
-                        </label>
-                        <!-- Special Accomodations -->
-                        <label for="description" class="top">
-                            Message
-                            <textarea name="description" id="description" cols="43" rows="10"></textarea>
-                        </label>
-                        <!-- Form Submit Time -->
-                        <input type="hidden" id="timestamp" name="timestamp" value="">
-                        <button type="submit" value="Contact" class="submitBtn" id="submitBtn">Contact</button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-        <section class="span-two">
-            <h2>Location</h2>
-            <div class="container-content">
-                <div>
-                    <h3>Playa del Carmen and Puerta Maya</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.879420228903!2d-86.95232612397517!3d20.511168705353203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cee05b393f%3A0xe9e6ac2a30c1dc31!2sAv%20Lic%20Benito%20Ju%C3%A1rez%20%26%20Av.%20Rafael%20E.%20Melgar%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702409026545!5m2!1sen!2sus"
-                        width="330" height="450" style="border:0;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
         </section>
     </main>

@@ -31,7 +31,7 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="nav-logo">Scoots</a>
+            <a href="index.html" class="nav-logo">Scoots</a>
             <div class="mobile-right">
                 <a href="reservations.html" class="cta active">Reserve</a>
                 <a id="menu" href="#" aria-label="Menu drop down button for navigation"></a>
@@ -45,10 +45,10 @@
         </nav>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro span-all">
             <h1>Reservations</h1>
         </section>
-        <section class="rental-options">
+        <section class="span-two">
             <h2>Rental Options</h2>
             <div class="container-content">
                 <ul>
@@ -74,7 +74,7 @@
                 </ul>
             </div>
         </section>
-        <section class="reserve-form">
+        <section class="reserve-form span-one">
             <h2>Reservation Form</h2>
             <div class="container-content">
                 <form method="get" action="thankyou.html">
@@ -99,7 +99,7 @@
                         <!-- Phone Number -->
                         <label for="tel" class="top">
                             Phone Number*
-                            <input type="tel" id="tel" name="tel" autocomplete="tel" required>
+                            <input type="tel" id="tel" name="tel" pattern="[0-9+]{10,}" autocomplete="tel" required>
                         </label>
                         <!-- Rental Type -->
                         <label for="rental-type" class="top">
@@ -153,7 +153,7 @@
                 </form>
             </div>
         </section>
-        <section class="rental-agreement">
+        <section class="span-two">
             <h2>Rental Agreement</h2>
             <div class="container-content">
                 <h3>Terms of Agreement</h3>
