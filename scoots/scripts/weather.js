@@ -59,7 +59,7 @@ async function forecastFetch() {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayForecast(data);
         } else {
             throw Error(await response.text());

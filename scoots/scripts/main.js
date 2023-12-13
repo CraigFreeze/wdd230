@@ -1,3 +1,7 @@
+//update current year in footer
+let todaysYear = new Date().getFullYear();
+document.querySelector('#year').textContent = todaysYear;
+
 // Store the selected elements that we are going to use. 
 const mainnav = document.querySelector('.nav-links-container')
 const hambutton = document.querySelector('#menu');

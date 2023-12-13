@@ -4,7 +4,7 @@ async function getRentalData() {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        console.log(data)
+        // console.log(data)
         displayRentalData(data);
     } else {
         console.log(response.status);

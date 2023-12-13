@@ -430,7 +430,6 @@ td {
 form fieldset {
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
     border: 4px solid var(--reseda-green);
     border-radius: 15px;
     padding: .5rem 2%;
@@ -500,6 +499,13 @@ form textarea {
     width: 100%;
 }
 
+/* Location iframe */
+iframe {
+    width: 100%;
+    height: 29.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
 /* Footer */
 footer {
     background-color: var(--moonstone);
@@ -515,12 +521,13 @@ footer {
     margin: 0 auto;
 }
 
-.location .section-content {
+/* .location .section-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: auto 0;
-}
+    height: 100%;
+} */
 
 footer p {
     text-align: center;
