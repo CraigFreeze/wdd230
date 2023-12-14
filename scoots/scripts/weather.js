@@ -6,7 +6,18 @@ const units = 'imperial';
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
 
-
+const testData = [
+    {
+      "icon": "test.png",
+      "description": "test123",
+      "main": "TEST"
+    },
+    {
+      "icon": "test1.png",
+      "description": "test1231",
+      "main": "TEST1"
+    }
+  ];
 // const URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=${units}`;
 
 
@@ -38,6 +49,45 @@ async function weatherFetch() {
 }
 
 function displayWeather(data) {
+    let first = true;
+
+    curTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
+    curHumidity.innerHTML = `${Math.round(data.main.humidity)}%`;
+    weatherIcon.setAttribute('width', "100");
+    weatherIcon.setAttribute('height', "100");
+    curFeelsLike.innerHTML = `${Math.round(data.main.feels_like)}&deg;F`;
+    curWindSpeed.innerHTML = `${Math.round(data.wind.speed)} mph`;
+    curVisibility.innerHTML = `${Math.round(data.visibility) / 1000} km`;
+    data.weather.forEach(event => {
+        if (first) {
+            const iconsrc = `https://openweathermap.org/img/w/${event.icon}.png`;
+            let desc = event.description;
+            weatherIcon.setAttribute('src', iconsrc);
+            weatherIcon.setAttribute('alt', capitalizeFirst(desc));
+            curMainDesc.innerHTML = `(${event.main} - ${capitalizeFirst(event.description)})`;
+            first = false;
+        } else {
+            // DISPLAYS ALL AVAILABLE WEATHER DATA POINTS
+            const iconsrc = `https://openweathermap.org/img/w/${event.icon}.png`;
+            
+            let desc = event.description;
+            let title = event.main;
+            
+            let container = document.querySelector(".weather");
+            let imgIcon = document.createElement("img");
+            let titleAndDesc = document.createElement("div");
+
+            titleAndDesc.innerHTML = `${title} - ${capitalizeFirst(desc)}`;
+            imgIcon.setAttribute('src', iconsrc);
+            imgIcon.setAttribute('alt', capitalizeFirst(desc));
+            imgIcon.setAttribute('width', "100");
+            imgIcon.setAttribute('height', "100");
+
+            container.append(imgIcon);
+            container.append(titleAndDesc);
+        }
+    });
+
     curTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     curHumidity.innerHTML = `${Math.round(data.main.humidity)}%`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -73,9 +123,9 @@ async function forecastFetch() {
 
 function formatDate(dateTime) {
     let date = "";
-    let monthPart =  dateTime.substring(5, 7);
+    let monthPart = dateTime.substring(5, 7);
     const months = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
-    let dayPart =  dateTime.substring(8, 10);
+    let dayPart = dateTime.substring(8, 10);
     date = date + months[monthPart - 1] + " " + dayPart;
     return date;
 }
